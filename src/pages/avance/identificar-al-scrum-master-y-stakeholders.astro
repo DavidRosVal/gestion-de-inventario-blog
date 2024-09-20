@@ -1,0 +1,145 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+      .stakeholders p,strong {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Identificar al Scrum Master y stakeholders</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+          <li>
+            <a href="/avance/crear-la-vision-del-proyecto#product-owner">Product Owner</a>
+          </li>
+          <li>
+            <a href="/avance/crear-la-vision-del-proyecto#declaracion-vision">Declaración de la Visión del Proyecto</a>
+          </li>
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Criterios de selección</h3>
+        
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="scrum-master">
+          <h3>Scrum Master identificado</h3>
+          <p>El Scrum Master es un facilitador que garantiza que el equipo Scrum cuente con un ambiente adecuado para completar con éxito el proyecto. Se encarga de eliminar los impedimentos que puedan surgir y de asegurar que se sigan las prácticas y procesos de Scrum. Además, actúa como un guía y líder servicial, apoyando a los miembros del equipo en la implementación efectiva del proyecto.</p>
+          <p>En este proyecto, se ha identificado a Raúl López como el Scrum Master usando la técnica de priorización Dot Voting, debido a las siguientes características:</p>
+          <ul>
+            <li>
+              Raúl tiene un profundo conocimiento sobre la metodología Scrum, lo que le permite guiar y facilitar las prácticas a los demás miembros del equipo.
+            </li>
+            <li>
+              Tiene la habilidad de identificar y resolver cualquier problema o impedimento que surja durante el desarrollo del proyecto, asegurando la continuidad del trabajo.
+            </li>
+            <li>
+              Dispone del tiempo necesario para convocar y realizar las reuniones de seguimiento del proyecto, así como para brindar apoyo continuo a los miembros del equipo.
+            </li>
+            <li>
+              Fomenta un ambiente colaborativo y democrático, permitiendo que todos los integrantes del equipo participen en la toma de decisiones mediante la discusión y votación, garantizando que se alcance un consenso general.
+            </li>
+          </ul>
+          <div class="image-team-member">
+            <img width={500}  src="/images/scrum-master.jpg" alt="" />
+          </div>
+        </div>
+        <div id="stakeholders.0">
+          <h3>Stakeholders identificados</h3>
+          <div class="stakeholders-container">
+            <div class="stakeholders">
+              <img width={200} height={200} src="/images/administradora.jpg" alt="" />
+              <strong>Allison Lucia Grados Gil</strong>
+              <p>Administradora</p>
+            </div>
+            <div class="stakeholders">
+              <img width={200} height={200} src="/images/mozo-cajero.jpg" alt="" />
+              <strong>Yazam Grados Gil</strong>
+              <p>Mozo/cajero</p>
+            </div>
+            <div class="stakeholders">
+              <img width={200} height={200} src="/images/cocinera.jpg" alt="" />
+              <strong>Nayeli Silva Quiñon</strong>
+              <p>Cocinera </p>
+            </div>
+          </div>
+        </div>
+      </div>
+		</main>
+		<Footer />
+	</body>
+</html>
