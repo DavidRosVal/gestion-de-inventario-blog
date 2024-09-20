@@ -1,0 +1,159 @@
+---
+
+---
+<h4>Épica 1: Control de stock</h4>
+<p>Implementar un sistema que controle la salida y entradas de productos</p>
+<h5>Historias de usuario:</h5>
+
+<strong>MUST HAVE</strong>
+<ul>
+  <li>Como empleado quiero poder registrar la entrada de nuevos insumos.
+    <ul>
+      <li>Valor: Alto (fundamental para el control)</li>
+      <li>Riesgo: Bajo</li>
+      <li>Dependencia: Asignación de roles, gestión de productos</li>
+    </ul>
+  </li>
+</ul>
+
+<strong>SHOULD HAVE</strong>
+<ul>
+  <li>Como empleado quiero poder registrar la fecha de vencimiento de los productos.
+    <ul>
+      <li>Valor: Alto</li>
+      <li>Riesgo: Medio</li>
+      <li>Dependencia: Asignación de roles, gestión de productos</li>
+    </ul>
+  </li>
+</ul>
+
+<strong>COULD HAVE</strong>
+<ul>
+  <li>Como empleado quiero poder actualizar las cantidades al final del día.
+    <ul>
+      <li>Valor: Alto (esencial para mantener el inventario actualizado)</li>
+      <li>Riesgo: Medio</li>
+      <li>Dependencia: Asignación de roles, gestión de productos</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Épica 2: Alertas de productos</h4>
+<p>Mostrar alertas cuando un producto se esté por acabar o por vencer.</p>
+<h5>Historias de usuario:</h5>
+
+<strong>SHOULD HAVE</strong>
+<ul>
+  <li>Como empleado quiero recibir una alerta cuando un producto llegue a un stock determinado.
+    <ul>
+      <li>Valor: Medio</li>
+      <li>Riesgo: Bajo</li>
+      <li>Dependencia: Asignación de roles, gestión de productos, stock mínimo</li>
+    </ul>
+  </li>
+  <li>Como empleado quiero poder visualizar las alertas y las fechas de vencimiento de los productos.
+    <ul>
+      <li>Valor: Alto</li>
+      <li>Riesgo: Bajo</li>
+      <li>Dependencia: Asignación de roles, gestión de productos, establecimiento de tiempo</li>
+    </ul>
+  </li>
+  <li>Como administrador quiero determinar el stock mínimo personalizado para cada producto.
+    <ul>
+      <li>Valor: Alto (necesario para las notificaciones)</li>
+      <li>Riesgo: Medio</li>
+      <li>Dependencia: Asignación de roles, gestión de productos</li>
+    </ul>
+  </li>
+  <li>Como administrador quiero poder establecer el número de días anteriores al vencimiento que debo recibir la notificación.
+    <ul>
+      <li>Valor: Alto (necesario para las alarmas)</li>
+      <li>Riesgo: Medio</li>
+      <li>Dependencia: Asignación de roles, gestión de productos</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Épica 3: Crear reportes personalizados</h4>
+<p>Crear reportes cada cierto tiempo que muestren el estado del inventario.</p>
+<h5>Historias de usuario:</h5>
+
+<strong>SHOULD HAVE</strong>
+<ul>
+  <li>Como administrador quiero poder visualizar las cantidades de stock.
+    <ul>
+      <li>Valor: Alto (esencial para el control)</li>
+      <li>Riesgo: Medio</li>
+      <li>Dependencia: Asignación de roles, gestión de productos</li>
+    </ul>
+  </li>
+</ul>
+
+<strong>COULD HAVE</strong>
+<ul>
+  <li>Como administrador quiero poder visualizar la variabilidad de los productos del stock durante el tiempo a través de tablas y gráficos.
+    <ul>
+      <li>Valor: Bajo</li>
+      <li>Riesgo: Medio</li>
+      <li>Dependencia: Asignación de roles, gestión de productos</li>
+    </ul>
+  </li>
+  <li>Como administrador quiero que se genere un reporte general que incluya fechas de vencimiento, stock, varianza una vez a la semana.
+    <ul>
+      <li>Valor: Medio</li>
+      <li>Riesgo: Medio</li>
+      <li>Dependencia: Asignación de roles, gestión de productos</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Épica 4: Roles y usuarios</h4>
+<p>Usuarios con los permisos de administrador y empleados.</p>
+<h5>Historias de usuario:</h5>
+
+<strong>MUST HAVE</strong>
+<ul>
+  <li>Como administrador quiero tener un acceso total al sistema y poder crear nuevos usuarios con el rol de cajeros.
+    <ul>
+      <li>Valor: Alto (importante para mantener la jerarquía del sistema)</li>
+      <li>Riesgo: Bajo (funcionalidad básica)</li>
+      <li>Dependencia: Ninguna</li>
+    </ul>
+  </li>
+  <li>Como administrador quiero dar un acceso parcial a los cajeros al sistema.
+    <ul>
+      <li>Valor: Alto (esencial para mantener el inventario actualizado)</li>
+      <li>Riesgo: Bajo (funcionalidad básica)</li>
+      <li>Dependencia: Ninguna</li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Épica 5: Gestión de productos</h4>
+<p>Permitir la gestión de los insumos.</p>
+<h5>Historias de usuario:</h5>
+
+<strong>MUST HAVE</strong>
+<ul>
+  <li>Como administrador quiero poder agregar nuevos insumos al sistema.
+    <ul>
+      <li>Valor: Alto (esencial)</li>
+      <li>Riesgo: Medio (requiere cierta lógica)</li>
+      <li>Dependencia: Ninguna</li>
+    </ul>
+  </li>
+  <li>Como administrador quiero poder modificar los productos en el sistema.
+    <ul>
+      <li>Valor: Alto (esencial)</li>
+      <li>Riesgo: Medio (requiere cierta lógica)</li>
+      <li>Dependencia: Ninguna</li>
+    </ul>
+  </li>
+  <li>Como administrador quiero poder eliminar insumos previa validación de mi contraseña.
+    <ul>
+      <li>Valor: Alto (esencial)</li>
+      <li>Riesgo: Medio (requiere cierta lógica)</li>
+      <li>Dependencia: Ninguna</li>
+    </ul>
+  </li>
+</ul>

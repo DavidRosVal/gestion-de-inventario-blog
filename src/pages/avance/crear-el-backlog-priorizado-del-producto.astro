@@ -1,0 +1,126 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import ScrumTeamCriteriaTable from '../../components/ScrumTeamCriteriaTable.astro';
+import DeveloperTeamTable from '../../components/DeveloperTeamTable.astro';
+import Epicas from '../../components/Epicas.astro';
+import PrioritizedProductBacklog from '../../components/PrioritizedProductBacklog.astro';
+import Moscow from '../../components/Moscow.astro';
+
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+      .stakeholders p,strong {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Crear el Backlog Priorizado del Producto</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+          <li>
+            <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>
+          </li>
+          <li>
+            <a href="/avance/desarrollar-epicas#epicas">Épicas</a>
+          </li>
+          <li>
+            <a href="/avance/desarrollar-epicas#prototipos">Prototipos</a>
+          </li>
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Método MoSCoW</h3>
+        <Moscow />
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="product-backlog">
+          <h3>Backlog Priorizado del Producto</h3>
+          <PrioritizedProductBacklog />
+        </div>
+        <div id="criterios-terminado">
+          <h3>Criterios de Terminado</h3>
+          <ul>
+            <li>
+              El prototipo pasa todas las pruebas de uso y rendimiento aceptadas por el personal del restobar.
+            </li>
+            <li>
+              El sistema permite a los usuarios gestionar el inventario de manera sencilla y rápida, cumpliendo con las necesidades del equipo.
+            </li>
+          </ul>
+        </div>
+      </div>
+		</main>
+		<Footer />
+	</body>
+</html>
