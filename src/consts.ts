@@ -40,11 +40,4 @@ export const AVANCES = [
       title: 'Crear el backlog priorizado del producto',
     }
   },
-  {
-    slug: 'realizar-la-planificacion-del-lanzamiento',
-    data: {
-      heroImage: '',
-      title: 'Realizar la planificación del lanzamiento',
-    }
-  },
 ]
