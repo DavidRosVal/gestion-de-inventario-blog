@@ -1,0 +1,153 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import ScrumTeamCriteriaTable from '../../components/ScrumTeamCriteriaTable.astro';
+import DeveloperTeamTable from '../../components/DeveloperTeamTable.astro';
+import Epicas from '../../components/Epicas.astro';
+
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+      .stakeholders p,strong {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Desarrollar Épicas</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+          <li>
+            <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>
+          </li>
+          <li>
+            <a href="/avance/identificar-al-scrum-master-y-stakeholders#stakeholders">Stakeholders</a>
+          </li>
+          <li>
+            Información de proyectos previos:
+            <p>En el restobar Villa29, el control de inventario se ha gestionado de manera manual, sin el uso de ningún sistema automatizado previo. Por lo tanto, implementar este nuevo sistema de gestión de inventario será una innovación dentro de la empresa, lo que representa tanto una oportunidad de optimización.</p>
+          </li>
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Reuniones del grupo de usuarios</h3>
+        <div class="stakeholders">
+          <img width={200} height={200} src="/images/administradora.jpg" alt="" />
+        </div>
+        <p> &quot;Como administradora del restobar Villa 29, gestiono al personal, los horarios y los proveedores, asegurando un servicio eficiente y de calidad. Mi responsabilidad incluye coordinar los turnos del equipo, realizar pedidos para mantener el stock y controlar las ventas diarias. También me enfoco en garantizar la satisfacción del cliente y mejorar continuamente la operatividad del local, todo mientras busco optimizar la rentabilidad y capacitar al personal para ofrecer un buen servicio. &quot; <strong>-Allison Lucia Grados Gil (Administradora de Villa 29)</strong></p>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="epicas">
+          <h3>Épicas y sus Historias de Usuario</h3>
+          <Epicas />
+        </div>
+        <div id="prototipos">
+          <h3>Prototipos</h3>
+          <ul>
+            <li>
+              <strong>
+                Prototipo 1
+              </strong>
+              <p>Marcos Vega, gerente del restobar El Rincón Criollo en Surco, es un apasionado de la tecnología aplicada a la gestión. Ha implementado un sistema digital que le permite gestionar los pedidos de los clientes, controlar el inventario y ajustar los turnos del personal desde su smartphone. Además, Marcos puede hacer seguimiento de las ventas en tiempo real, verificar las facturas de proveedores y coordinar promociones especiales con solo unos clics, lo que le ayuda a optimizar las operaciones del restaurante de manera ágil y efectiva.</p>
+            </li>
+            <li>
+              <strong>
+                Prototipo 2
+              </strong>
+              <p>Luis Martínez tiene 45 años y vive en la Avenida Lima, en Villa El Salvador. Le gusta gestionar inventarios y, después de haber trabajado en varios restaurantes, ahora se encarga de controlar los insumos en el restobar Fusión Perú. Usa un sistema sencillo para manejar el inventario y asegurarse de que siempre haya productos disponibles.</p>
+            </li>
+            <li>
+              <strong>
+                Prototipo 3
+              </strong>
+              <p>Mariana Ruiz tiene 30 años y vive en la Avenida La Paz, en Villa El Salvador. Disfruta su trabajo en el restobar La Cabaña, donde le encanta atender a los clientes. Quiere tener a mano información sobre qué productos hay, para hacer buenas recomendaciones. Le gusta tener acceso rápido a la lista de insumos, porque así mejora la experiencia de los clientes.</p>
+            </li>
+            <li>
+              <strong>
+                Prototipo 4
+              </strong>
+              <p>Javier Gómez tiene 38 años y vive en la Avenida Universitaria, en Villa El Salvador. Es chef en el restobar El Encanto y ama cocinar, le gusta probar nuevas recetas y necesita saber qué ingredientes tiene en la cocina. Javier busca un sistema que le muestre qué insumos están disponibles, para poder hacer los mejores platos y no quedarse sin lo que necesita.</p>
+            </li>
+            <li>
+              <strong>
+                Prototipo 5
+              </strong>
+              <p>Ana Beltrán tiene 36 años y vive en la Avenida San Juan, en Villa El Salvador. Es la gerente del restobar Parrilla y Sazón, y quiere que el negocio funcione bien. Le gusta ver cómo van las ventas y el inventario para tomar buenas decisiones. Ana necesita un sistema que le dé reportes claros sobre el stock y las ventas, para poder planificar mejor las compras y asegurarse de que siempre haya productos disponibles.</p>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+		</main>
+		<Footer />
+	</body>
+</html>
