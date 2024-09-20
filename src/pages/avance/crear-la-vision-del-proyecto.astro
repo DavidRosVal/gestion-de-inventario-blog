@@ -1,0 +1,141 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Crear la Visión del Proyecto</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <div>
+          <h3>Caso de negocio del proyecto</h3>
+          <ol>
+            <li>
+              <p>Antecedentes</p>
+              <p>El restobar Villa 29 ha experimentado un crecimiento constante en su clientela, debido a esto se dio cuenta de que su gestión de inventario se volvía cada vez más ineficiente al utilizar metodos manuales, lo que ha generado la necesidad de contar con un sistema de gestión de inventario que permita una mejor eficiencia . Actualmente la administración se hace de manera manual , lo que genera problemas como el desabastecimiento de insumos y errores en la contabilización, afectando la calidad del servicio.</p>
+            </li>
+            <li>
+              <p>Objetivos</p>
+              <p>El objetivo principal es proporcionar un sistema que permita:</p>
+              <ul>
+                <li>Mejorar el control del inventario mediante el seguimiento en tiempo real de productos perecederos y no perecederos.</li>
+                <li>Optimizar la reposición de inventario y evitar la falta de stock.</li>
+                <li>Automatizar la generación de reportes de inventario para facilitar la toma de decisiones.</li>
+                <li>Mejorar la rentabilidad mediante una mejor gestión de insumos y reducción de costos innecesarios</li>
+              </ul>
+            </li>
+            <li>
+              <p>Resultados esperados</p>
+              <ul>
+                <li>Facilitar la reposición automática y notificaciones de stock bajo, lo que reducirá los tiempos de gestión manual de inventario.</li>
+                <li>Mejorar la planificación de pedidos y reducción de costos asociados a la sobrecompra de productos.
+                </li>
+                <li>Minimizar las pérdidas por caducidad de productos.</li>
+              </ul>
+            </li>
+            <li>
+              <p>Análisis FODA</p>
+              <img width={1020} height={510} src="/images/crear-vision-foda.jpg" alt="" />
+            </li>
+            <li>
+              <p>Estimaciones de tiempo y esfuerzo</p>
+              <ul>
+                <li>Tiempo estimado: 3 meses de desarrollo distribuidos en sprints de 3 semanas</li>
+                <li>Esfuerzo: Aproximadamente 500 horas de trabajo divididas entre desarrollo y pruebas.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        
+        <div>
+          <h3>Misión de la empresa</h3>
+          <p>Brindar una experiencia excepcional a nuestros clientes, ofreciendo platillos innovadores con ingredientes frescos y de calidad, acompañada de un servicio cálido y un ambiente vibrante. Nos esforzamos por ser un espacio donde las personas puedan disfrutar, relajarse y compartir buenos momentos.</p>
+        </div>
+
+        <div>
+          <h3>Visión de la empresa</h3>
+          <p>Convertirnos en el lugar preferido para quienes buscan una experiencia gastronómica única, donde la fusión de sabores, el ambiente acogedor y la atención personalizada se combinen para crear momentos inolvidables.</p>
+        </div>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Entrevista</h3>
+        <video width={1020} controls>
+          <source src="/videos/entrevista.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de videos.
+        </video>
+        
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <h3>Product Owner identificado</h3>
+        <p>El Product Owner es la persona encargada de maximizar el valor empresarial del proyecto y de representar la voz del cliente frente al equipo Scrum. Su responsabilidad incluye comunicar de manera clara los requisitos del producto y asegurarse de que los Criterios de Aceptación sean definidos y cumplidos, manteniendo siempre la justificación del negocio.</p>
+        <p>En nuestro caso, este rol recaerá sobre nuestro compañero Diego Otazú, dado que tiene un vínculo directo con el dueño del restobar, lo que le permite mantener una comunicación fluida y cercana con él. Su contacto directo garantiza que las necesidades del negocio sean comprendidas y transmitidas de manera efectiva al equipo, y además se compromete a cumplir con sus responsabilidades de forma diligente, asegurando que el proyecto entregue el valor esperado al cliente.</p>
+        <div class="image-team-member">
+          <img width={500}  src="/images/product-owner.jpg" alt="" />
+        </div>
+        <h3>Declaración de la visión del proyecto</h3>
+        <p>El restobar Villa29 busca mejorar significativamente la gestión de su inventario de alimentos, bebidas e insumos. El objetivo principal del proyecto es desarrollar un sistema de gestión de inventario que permita optimizar el control y seguimiento de los productos almacenados, asegurando la disponibilidad de insumos esenciales, reduciendo pérdidas por vencimientos, y facilitando la toma de decisiones en cuanto a la reposición de stock.</p>
+        <p>Este sistema debe ser fácil de usar, permitiendo a los colaboradores del restobar gestionar el inventario de manera eficiente. Además, deberá proporcionar reportes detallados que faciliten la administración y el análisis del inventario, apoyando la gestión general del negocio en la reducción de costos y mejora en la planificación de compras.</p>
+        <p>El proyecto se compromete a satisfacer las expectativas de los stakeholders, proporcionando una solución que se adapte a las necesidades del restobar, manteniendo la flexibilidad necesaria para ajustar el sistema en función de cambios operacionales o de requerimientos que puedan surgir durante el desarrollo del proyecto.</p>
+      </div>
+		</main>
+		<Footer />
+	</body>
+</html>
