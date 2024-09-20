@@ -1,0 +1,179 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import ScrumTeamCriteriaTable from '../../components/ScrumTeamCriteriaTable.astro';
+import DeveloperTeamTable from '../../components/DeveloperTeamTable.astro';
+
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+      .stakeholders p,strong {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Formar al Equipo Scrum</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+          <li>
+            <a href="/avance/crear-la-vision-del-proyecto#product-owner">Product Owner</a>
+          </li>
+          <li>
+            <a href="/avance/identificar-al-scrum-master-y-stakeholders#scrum-master">Scrum Master</a>
+          </li>
+          <li>
+            <a href="/avance/crear-la-vision-del-proyecto#declaracion-vision">Declaración de la Visión del Proyecto</a>
+          </li>
+          <li>
+            <p>Requisitos de las personas</p>
+            <ScrumTeamCriteriaTable />
+          </li>
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Reunión de selección del Equipo de Desarrollo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam facilis animi quia odio. Error voluptatibus rem perferendis asperiores aperiam aliquid nihil quidem quas recusandae ad, autem inventore distinctio quaerat vel.</p>
+        <h3>Criterio de selección del Equipo Scrum</h3>
+        <p>Se asignaron los roles en base a sus conocimientos y experiencia con tecnologías requeridas para el desarrollo del proyecto.</p>
+        <p>Criterios:</p>
+        <ul>
+          <li>
+            <p>Lenguajes de programación</p>
+            <ul>
+              <li>
+                php
+              </li>
+              <li>
+                JavaScript
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Experiencia</p>
+            <ul>
+              <li>
+                Desarrollo de aplicaciones web
+              </li>
+              <li>
+                Conexión a base de datos
+              </li>
+              <li>
+                Desarrollo de APIs
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Otros conocimientos</p>
+            <ul>
+              <li>
+                Testing
+              </li>
+              <li>
+                GitHub
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="scrum-team">
+          <h3>Equipo Scrum identificado</h3>
+          <DeveloperTeamTable />
+          <p>Developer Team:</p>
+          <ul>
+            <li>
+              Axel Barzola (back-end developer)
+              <ul>
+                <li>Seleccionado como back-end por su experiencia desarrollando aplicaciones en el lenguaje PHP, siendo quien tiene un conocimiento más robusto del framework Laravel que emplearemos.</li>
+              </ul>
+            </li>
+            <li>
+              David Rosado (front-end developer)
+              <ul>
+                <li>Seleccionado como front-end por su experiencia desarrollando en el lenguaje JavaScript interfaces de usuario con la librería React.</li>
+              </ul>
+            </li>
+            <li>
+              Josue Caman (full-stack developer)
+              <ul>
+                <li>Seleccionado como full-stack para brindar apoyo a ambas partes mencionadas por su experiencia desarrollando aplicaciones web y APIs en el framework Django de Python.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+		</main>
+		<Footer />
+	</body>
+</html>
