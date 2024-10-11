@@ -1,0 +1,123 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import ScrumTeamCriteriaTable from '../../components/ScrumTeamCriteriaTable.astro';
+import DeveloperTeamTable from '../../components/DeveloperTeamTable.astro';
+import Epicas from '../../components/Epicas.astro';
+import PrioritizedProductBacklog from '../../components/PrioritizedProductBacklog.astro';
+import Moscow from '../../components/Moscow.astro';
+import HistoriasDeUsuario from '../../components/HistoriasDeUsuario.astro';
+
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+		main {
+				width: 960px;
+			}
+		.seccion {
+        margin-bottom: 3em;
+        }
+        h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        }
+        h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        }
+        h1 {
+        text-align: center;
+        margin-bottom: 1em;
+        }
+        .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        }
+        .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+        }
+        .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        }
+        .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+        }
+        
+		</style>
+	</head>
+
+
+<body>
+    <Header />
+    <main>
+    <h1>Formar al Equipo Scrum</h1>
+    <div class="seccion">
+    <hr>
+    <h2>Entradas</h2>
+    <hr>
+    <ol>
+        <li>
+        <a href="/avance/formar-al-equipos-scrum#scrum-team">Equipo Principal de Scrum</a>
+        </li>
+        <li>
+        <a href="/avance/crear-el-backlog-priorizado-del-producto#product-backlog">Backlog priorizado del producto</a>
+        </li>
+        <li>
+        <a href="/avance/crear-el-backlog-priorizado-del-producto#criterios-terminado">Criterios de terminado</a>
+        </li>
+        <li>
+        <a href="/avance/desarrollar-epicas#prototipos">Prototipos</a>
+        </li>
+    </ol>
+    </div>
+    <div class="seccion">
+    <hr>
+    <h2>Herramientas</h2>
+    <hr>
+    <h3>Experiencia en la redaccion de historias de usuario</h3>
+    <div class="image-team-member">
+        <img width={500} src="/images/pizarra.jpg" alt="" />
+    </div>
+    <div class="image-team-member">
+    <img width={500} src="/images/pre-reunion.jpg" alt="" />
+    </div>
+    <h3>Reuniones del grupo de usuarios</h3>
+    <div class="image-team-member">
+        <img width={500} src="/images/reunion-de-usuarios.jpg" alt="" />
+    </div>
+    <div class="image-team-member">
+        <img width={500} src="/images/llenado-de-tabla.jpg" alt="" />
+    </div>
+    </div>
+<div class="seccion">
+    <hr>
+    <h2>Salidas</h2>
+    <div id="historias-de-usuario">
+    <h3>Historias de usuario y criterios de terminado</h3>
+    <HistoriasDeUsuario/>
+    </div>
+    <h3>Backlog Priorizado actualizado</h3>
+    <div class="image-team-member">
+        <img width={500} src="/images/backlog-priorizado-beta.jpg" alt="" />
+    </div>
+</div>
+    </main>
+    <Footer />
+</body>

@@ -1,0 +1,178 @@
+<body>
+    <h4>Historia de Usuario - Tareas</h4>
+    <table>
+        <tr>
+            <th>Historia de Usuario</th>
+            <th>Tarea</th>
+            <th>Asignado a</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td rowspan="4">HU11</td>
+            <td>Diseñar la interfaz de creación de usuarios</td>
+            <td>Axel Barzola</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Implementar la lógica para crear nuevos usuarios</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Validar los datos del nuevo usuario</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Escribir pruebas unitarias para la creación de usuarios</td>
+            <td>Axel Barzola</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td rowspan="4">HU12</td>
+            <td>Diseñar la interfaz para gestionar permisos</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Implementar la lógica de permisos</td>
+            <td>Axel Barzola</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Validar los permisos asignados</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Escribir pruebas para la gestión de permisos</td>
+            <td>Axel Barzola</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td rowspan="5">HU16</td>
+            <td>Crear un formulario de ingreso de órdenes en la interfaz del cajero</td>
+            <td>Josue Caman</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Implementar validación de datos en el formulario (requeridos, tipos de datos).</td>
+            <td>Axel Barzola</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Conectar el formulario con el backend para crear el objeto "orden" en la base de datos.</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Establecer el mecanismo Websocket de transmisión en tiempo real para enviar la orden a la cocina.</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Probar el envío de órdenes desde el cajero a la cocina en diferentes escenarios (orden válido, orden vacío, errores en red).</td>
+            <td>Josue Caman</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td rowspan="5">HU17</td>
+            <td>Crear una interfaz de cocina que muestre los órdenes recibidos (lista o tabla organizada por estado).</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Diseñar la estructura visual para mostrar detalles del orden (nombre del platillo, cantidad, adicionales).</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Implementar la lógica de recepción de órdenes en tiempo real</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Agregar filtros o categorías para organizar los órdenes.</td>
+            <td>Axel Barzola</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Probar la visualización de órdenes en diferentes situaciones</td>
+            <td>Josue Caman</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td rowspan="5">HU18</td>
+            <td>Agregar un botón de "Confirmar recepción" en la interfaz de la cocina.</td>
+            <td>Axel Barzola</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Conectar el botón al backend para actualizar el estado del orden en la base de datos (por ejemplo, de "Enviado" a "En preparación").</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Implementar un mecanismo de actualización en tiempo real para notificar al cajero sobre la confirmación de recepción del orden.</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Mostrar visualmente el estado "En preparación" en la interfaz del cajero.</td>
+            <td>Axel Barzola</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Probar el flujo de confirmación de orden y los estados asociados</td>
+            <td>Josue Caman</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td rowspan="5">HU19</td>
+            <td>Agregar un botón "orden listo" en la interfaz de la cocina.</td>
+            <td>Axel Barzola</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Conectar el botón al backend para cambiar el estado del orden a "Listo" en la base de datos.</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Implementar una actualización en tiempo real en la interfaz del cajero para mostrar que el orden está listo para ser entregado.</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Probar el flujo de cambio de estado de "En preparación" a "Listo" y la actualización automática en la interfaz del cajero.</td>
+            <td>Josue Caman</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Notificar visualmente en la interfaz del cajero el estado "Listo para entrega".</td>
+            <td>Axel Barzola</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td rowspan="4">HU20</td>
+            <td>Agregar una sección en la interfaz del cajero que muestre el estado actual de cada orden.</td>
+            <td>Axel Barzola</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Implementar una actualización automática en tiempo real de los estados de los órdenes en la interfaz del cajero.</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Mostrar el tiempo transcurrido desde la creación del orden para ayudar al cajero a estimar el tiempo de entrega.</td>
+            <td>David Rosado</td>
+            <td>Por hacer</td>
+        </tr>
+        <tr>
+            <td>Probar la correcta visualización y actualización de estados en tiempo real</td>
+            <td>Josue Caman</td>
+            <td>Por hacer</td>
+        </tr>
+    </table>
+</body>

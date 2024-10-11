@@ -1,0 +1,134 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import ScrumTeamCriteriaTable from '../../components/ScrumTeamCriteriaTable.astro';
+import DeveloperTeamTable from '../../components/DeveloperTeamTable.astro';
+import Epicas from '../../components/Epicas.astro';
+import Dependencias from '../../components/Dependencias.astro';
+import HistoriasComprometidasActualizada from '../../components/HistoriasComprometidasActualizada.astro';
+import BucketSystem from '../../components/BucketSystem.astro';
+import ListaDeTareas from '../../components/ListaDeTareas.astro';
+import TablasHistoriasComprometidas from '../../components/TablasHistoriasComprometidas.astro';
+import EffortEstimatedTaskList from '../../components/EffortEstimatedTaskList.astro';
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+      .stakeholders p,strong {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Estimar Tareas</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+          <li>
+            <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>
+          </li>
+          <li>
+            <a href="/avance/identificar#lista-de-tareas">Lista de Tareas</a>
+          </li>
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Reuniones de planificacion del Sprint</h3>
+        <br>
+        <h3>Criterios de estimacion</h3>
+        <p>Para realizar una correcta estimación de las tareas e historias de usuario, consideramos los siguientes criterios:</p>
+        <ul>
+        <li><b>Complejidad:</b> ¿Qué tan difícil es implementar la tarea o historia de usuario?</li>
+        <li><b>Nuevas herramientas:</b> ¿Involucra nuevas herramientas o lenguajes con los que el equipo no está familiarizado?</li>
+        <li><b>Tamaño del esfuerzo:</b> ¿Cuánto trabajo implicará realizar la tarea?</li>
+        <li><b>Tiempo estimado:</b> ¿Cuánto tiempo llevará completar la tarea?</li>
+        <li><b>Dependencias:</b> ¿Qué tan dependiente es la tarea de otras historias de usuario o módulos del sistema?</li>
+        <h3>Métodos de Estimación</h3>
+
+        <h4>Planning Poker</h4>
+        <p>Es un método basado en la estimación colectiva. El equipo asigna puntos de historia a cada tarea en función de la complejidad, esfuerzo y riesgo. Se usa la secuencia de Fibonacci (1, 2, 3, 5, 8, 13, etc.) para indicar la magnitud relativa del trabajo.</p>
+
+        <h4>Ventajas:</h4>
+        <ul>
+            <li>Favorece la discusión y evita estimaciones extremas.</li>
+        </ul>
+
+        <h4>Aplicación:</h4>
+        <p>Ideal para equipos que trabajan en Agile/Scrum y quieren tener consenso.</p></ul>
+        
+        </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="effort">
+            <h4>Effort Estimated Task Lis</h4>
+          <EffortEstimatedTaskList/>
+        </div>
+		</main>
+		<Footer />
+	</body>
+</html>

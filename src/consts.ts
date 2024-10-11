@@ -40,4 +40,53 @@ export const AVANCES = [
       title: 'Crear el backlog priorizado del producto',
     }
   },
+  {
+    slug: 'realizar-la-planificacion-de-lanzamiento',
+    data: {
+      heroImage: '',
+      title: 'Realizar la planificacion del lanzamiento',
+    }
+  },
+  {
+    slug: 'crear-historias-de-usuario',
+    data: {
+      heroImage: '',
+      title: 'Crear historias de usuario',
+    }
+  },
+  {
+    slug: 'estimar-historias-de-usuario',
+    data: {
+      heroImage: '',
+      title: 'Estimar historias de usuario',
+    }
+  },
+  {
+    slug: 'comprometer-historias-de-usuario',
+    data: {
+      heroImage: '',
+      title: 'Comprometer historias de usuario',
+    }
+  },
+  {
+    slug: 'identificar-tareas',
+    data: {
+      heroImage: '',
+      title: 'Identificar tareas',
+    }
+  },
+  {
+    slug: 'estimar-tareas',
+    data: {
+      heroImage: '',
+      title: 'Estimar tareas',
+    }
+  },
+  {
+    slug: 'crear-el-sprint-backlog',
+    data: {
+      heroImage: '',
+      title: 'Crear el Sprint Backlog',
+    }
+  },
 ]

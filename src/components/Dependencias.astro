@@ -1,0 +1,202 @@
+<body>
+    <table>
+        <tr>
+            <th>Historia de Usuario</th>
+            <th>Tarea</th>
+            <th>Dependencias</th>
+            <th>Tipo de Dependencia</th>
+        </tr>
+        <tr>
+            <td>HU11</td>
+            <td>Diseñar la interfaz de creación de usuarios</td>
+            <td>Ninguna</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>HU11</td>
+            <td>Implementar la lógica para crear nuevos usuarios</td>
+            <td>Ninguna</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>HU11</td>
+            <td>Validar los datos del nuevo usuario</td>
+            <td>Ninguna</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>HU11</td>
+            <td>Escribir pruebas unitarias para la creación de usuarios</td>
+            <td>Ninguna</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>HU12</td>
+            <td>Diseñar la interfaz para gestionar permisos</td>
+            <td>HU11</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU12</td>
+            <td>Implementar la lógica de permisos</td>
+            <td>HU11</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU12</td>
+            <td>Validar los permisos asignados</td>
+            <td>HU11</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU12</td>
+            <td>Escribir pruebas para la gestión de permisos</td>
+            <td>HU11</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU16</td>
+            <td>Crear un formulario de ingreso de órdenes en la interfaz del cajero</td>
+            <td>Ninguna</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>HU16</td>
+            <td>Implementar validación de datos en el formulario (requeridos, tipos de datos).</td>
+            <td>Ninguna</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>HU16</td>
+            <td>Conectar el formulario con el backend para crear el objeto "orden" en la base de datos.</td>
+            <td>Ninguna</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>HU16</td>
+            <td>Establecer el mecanismo Websocket de transmisión en tiempo real para enviar el orden a la cocina.</td>
+            <td>Ninguna</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>HU16</td>
+            <td>Probar el envío de órdenes desde el cajero a la cocina en diferentes escenarios (orden válido, orden vacío, errores en red).</td>
+            <td>Ninguna</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>HU17</td>
+            <td>Crear una interfaz de cocina que muestre los órdenes recibidos (lista o tabla organizada por estado).</td>
+            <td>HU16</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU17</td>
+            <td>Diseñar la estructura visual para mostrar detalles del orden (nombre del platillo, cantidad, adicionales).</td>
+            <td>HU16</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU17</td>
+            <td>Implementar la lógica de recepción de órdenes en tiempo real</td>
+            <td>HU16</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU17</td>
+            <td>Agregar filtros o categorías para organizar los órdenes.</td>
+            <td>HU16</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU17</td>
+            <td>Probar la visualización de órdenes en diferentes situaciones</td>
+            <td>HU16</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU18</td>
+            <td>Agregar un botón de "Confirmar recepción" en la interfaz de la cocina.</td>
+            <td>HU17</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU18</td>
+            <td>Conectar el botón al backend para actualizar el estado del orden en la base de datos (por ejemplo, de "Enviado" a "En preparación").</td>
+            <td>HU17</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU18</td>
+            <td>Implementar un mecanismo de actualización en tiempo real para notificar al cajero sobre la confirmación de recepción del orden.</td>
+            <td>HU17</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU18</td>
+            <td>Mostrar visualmente el estado "En preparación" en la interfaz del cajero.</td>
+            <td>HU17</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU18</td>
+            <td>Probar el flujo de confirmación de orden y los estados asociados</td>
+            <td>HU17</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU19</td>
+            <td>Agregar un botón "orden listo" en la interfaz de la cocina.</td>
+            <td>HU18</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU19</td>
+            <td>Conectar el botón al backend para cambiar el estado del orden a "Listo" en la base de datos.</td>
+            <td>HU18</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU19</td>
+            <td>Implementar una actualización en tiempo real en la interfaz del cajero para mostrar que el orden está listo para ser entregado.</td>
+            <td>HU18</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU19</td>
+            <td>Probar el flujo de cambio de estado de "En preparación" a "Listo" y la actualización automática en la interfaz del cajero.</td>
+            <td>HU18</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU19</td>
+            <td>Notificar visualmente en la interfaz del cajero el estado "Listo para entrega".</td>
+            <td>HU18</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU20</td>
+            <td>Agregar una sección en la interfaz del cajero que muestre el estado actual de cada orden.</td>
+            <td>HU19</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU20</td>
+            <td>Implementar una actualización automática en tiempo real de los estados de los órdenes en la interfaz del cajero.</td>
+            <td>HU19</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU20</td>
+            <td>Mostrar el tiempo transcurrido desde la creación del orden para ayudar al cajero a estimar el tiempo de entrega.</td>
+            <td>HU19</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+        <tr>
+            <td>HU20</td>
+            <td>Probar la correcta visualización y actualización de estados en tiempo real.</td>
+            <td>HU19</td>
+            <td>Obligatoria (Interna)</td>
+        </tr>
+    </table>
+</body>

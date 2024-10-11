@@ -1,0 +1,118 @@
+---
+---
+
+<table>
+    <thead>
+        <tr>
+            <th>Épica</th>
+            <th>Historia de Usuario</th>
+            <th>Criterio de aceptación</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3">Control de stock</td>
+            <td>Como empleado quiero poder registrar la entrada de nuevos insumos a fin de saber qué materiales tenemos.</td>
+            <td>El empleado puede poner nuevos materiales en el sistema, y debe ver un mensaje que diga que se agregó y que el material esté en la lista.</td>
+        </tr>
+        <tr>
+            <td>Como empleado, quiero escribir cuándo se vence cada producto, para saber hasta cuándo se pueden usar.</td>
+            <td>El empleado puede escribir la fecha de vencimiento de cada producto y debe ver un mensaje que diga que se guardó.</td>
+        </tr>
+        <tr>
+            <td>Como empleado, quiero actualizar las cantidades de productos al final del día, para saber cuántos quedan.</td>
+            <td>El empleado puede cambiar la cantidad de productos y debe ver un mensaje que confirme que se actualizó.</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Alerta de productos</td>
+            <td>Como empleado, quiero recibir una alerta cuando un producto llegue a un stock determinado, a fin de pedir más.</td>
+            <td>El empleado recibe un aviso cuando un producto está en un nivel bajo y debe poder verlo en la pantalla de alertas.</td>
+        </tr>
+        <tr>
+            <td>Como empleado, quiero ver las alertas y cuándo se vencen los productos, a fin de estar al tanto.</td>
+            <td>El empleado puede ver todas las alertas y las fechas de vencimiento en un lugar fácil de entender.</td>
+        </tr>
+        <tr>
+            <td>Como administrador, quiero determinar cuántos productos como mínimo debe haber, a fin de no quedarnos sin ellos.</td>
+            <td>El administrador puede fijar una cantidad mínima de productos y debe ver un mensaje que confirme que se guardó.</td>
+        </tr>
+        <tr>
+            <td>Como administrador, quiero decidir cuántos días antes del vencimiento me deben notificar, a fin de estar preparado.</td>
+            <td>El administrador puede seleccionar cuántos días antes quiere el aviso y debe ver un mensaje que confirme la configuración.</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Crear reportes personalizados</td>
+            <td>Como administrador, quiero ver cuántos productos hay en total, a fin de llevar el control</td>
+            <td>El administrador puede ver el total de productos en el sistema y debe poder ver un mensaje que confirme que la información es correcta.</td>
+        </tr>
+        <tr>
+            <td>Como administrador, quiero ver en tablas y gráficos cómo cambian las cantidades de productos con el tiempo, a fin de saber qué productos se venden más y cuáles menos.</td>
+            <td>El administrador puede ver tablas y gráficos que muestran el cambio en las cantidades de productos y deben ser fáciles de entender.</td>
+        </tr>
+        <tr>
+            <td>Como administrador, quiero que me hagan un reporte cada semana con las fechas de vencimiento, las cantidades, y los cambios, a fin de saber cuándo comprar más.</td>
+            <td>El administrador recibe un informe semanal con la información que pidió y debe poder leerlo fácilmente.</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Roles y Usuarios</td>
+            <td>Como administrador, quiero tener acceso completo al sistema y poder crear usuarios nuevos que sean cajeros, a fin de que haya más personas que puedan ayudar a vender.</td>
+            <td>El administrador puede crear nuevos usuarios y debe ver un mensaje que confirme que se agregaron.</td>
+        </tr>
+        <tr>
+            <td>Como administrador, quiero darles solo una parte del acceso a los cajeros, a fin de que no vean todo.</td>
+            <td>El administrador puede limitar el acceso de los cajeros y debe ver un mensaje que confirme que se guardaron los cambios.</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Gestión de Productos</td>
+            <td>Como administrador, quiero agregar nuevos productos al sistema, a fin de tener todo registrado.</td>
+            <td>El administrador puede añadir nuevos productos y debe ver un mensaje que confirme que se guardó.</td>
+        </tr>
+        <tr>
+            <td>Como administrador, quiero cambiar los datos de los productos en el sistema, a fin de que estén correctos.</td>
+            <td>El administrador puede modificar la información de un producto y debe ver un mensaje que confirme que se actualizó.</td>
+        </tr>
+        <tr>
+            <td>Como administrador, quiero poder borrar productos del sistema, pero solo si pongo mi contraseña antes, a fin de mantener la seguridad del sistema.</td>
+            <td>El administrador debe ingresar su contraseña para borrar un producto y debe recibir un mensaje que diga que se eliminó.</td>
+        </tr>
+        <tr>
+            <td rowspan="10">Gestión de órdenes</td>
+            <td>Como cajero, quiero enviar una orden a la cocina con todos los detalles para que el equipo de cocina la reciba en tiempo real.</td>
+            <td>Al enviar una orden, esta debe ser recibida inmediatamente en la cocina con todos los detalles correctos.</td>
+        </tr>
+        <tr>
+            <td>Como empleado de cocina, quiero recibir las órdenes en una interfaz clara y organizada para preparar los platillos en errores.</td>
+            <td>Las órdenes deben ser recibidas en una interfaz clara y organizada, asegurando la correcta preparación de los platillos.</td>
+        </tr>
+        <tr>
+            <td>Como empleado de cocina, quiero confirmar la recepción del orden para que el cajero sepa que está en preparación.</td>
+            <td>Se debe permitir al empleado de cocina confirmar la recepción del orden a través de un botón.</td>
+        </tr>
+        <tr>
+            <td>Como empleado de cocina, quiero notificar a la caja cuando un orden está listo para que el cajero lo entregue al cliente.</td>
+            <td>Se notifica al cajero cuando un orden ha sido completado y está listo para ser entregado al cliente.</td>
+        </tr>
+        <tr>
+            <td>Como cajero, quiero poder verificar el estado de cada orden (en preparación, listo) para informar al cliente el tiempo estimado.</td>
+            <td>La aplicación debe proporcionar un estado claro de cada orden para que el cajero pueda informar al cliente sobre el tiempo estimado de entrega.</td>
+        </tr>
+        <tr>
+            <td>Como empleado de cocina, quiero poder identificar y priorizar órdenes que requieren atención urgente para atenderlas primero.</td>
+            <td>La aplicación debe permitir al personal de cocina identificar y priorizar órdenes urgentes para garantizar su atención primero.</td>
+        </tr>
+        <tr>
+            <td>Como administrador, quiero acceder a un historial de órdenes enviadas entre la caja y la cocina para hacer seguimiento y detectar errores.</td>
+            <td>La aplicación debe mantener un registro exacto de todos los órdenes enviadas entre la caja y la cocina, permitiendo así el seguimiento y la detección de errores.</td>
+        </tr>
+        <tr>
+            <td>Como cajero, quiero poder editar una orden antes de que el equipo la empiece a preparar para corregir errores de ingreso.</td>
+            <td>El sistema debe permitir al cajero editar la información de un orden antes de su preparación en la cocina, para corregir posibles errores en la entrada.</td>
+        </tr>
+        <tr>
+            <td>Como cajero, quiero poder cancelar un orden en curso para eliminarlo si el cliente cambia de opinión antes de que la cocina lo prepare.</td>
+            <td>La aplicación debe permitir al cajero cancelar un orden en curso, siempre que este no haya sido iniciado por la cocina, en caso de que el cliente decida no proceder con el orden.</td>
+        </tr>
+    </tbody>
+</table>
