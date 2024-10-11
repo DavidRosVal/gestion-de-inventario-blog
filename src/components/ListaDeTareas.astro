@@ -1,6 +1,19 @@
+<style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center; /* Centra horizontalmente */
+      vertical-align: middle; /* Centra verticalmente */
+    }
+  </style>
 <body>
     <h4>Tabla de Historias de Usuario y Tareas</h4>
-    <table>
+    <table border="1">
         <thead>
             <tr>
                 <th>ID</th>
@@ -10,30 +23,6 @@
         </thead>
         <tbody>
             <tr>
-                <td>HU11</td>
-                <td>Como administrador quiero tener un acceso total al sistema y poder crear nuevos usuarios con el rol de cajeros.</td>
-                <td>
-                    <ul>
-                        <li>Diseñar la interfaz de creación de usuarios.</li>
-                        <li>Implementar la lógica para crear nuevos usuarios.</li>
-                        <li>Validar los datos del nuevo usuario.</li>
-                        <li>Escribir pruebas unitarias para la creación de usuarios.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>HU12</td>
-                <td>Como administrador quiero dar un acceso parcial a los cajeros al sistema.</td>
-                <td>
-                    <ul>
-                        <li>Diseñar la interfaz para gestionar permisos.</li>
-                        <li>Implementar la lógica de permisos.</li>
-                        <li>Validar los permisos asignados.</li>
-                        <li>Escribir pruebas para la gestión de permisos.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
                 <td>HU16</td>
                 <td>Como cajero, quiero enviar un orden a la cocina con todos los detalles para que el equipo de cocina lo reciba en tiempo real.</td>
                 <td>
@@ -42,7 +31,6 @@
                         <li>Implementar validación de datos en el formulario (requeridos, tipos de datos).</li>
                         <li>Conectar el formulario con el backend para crear el objeto "orden" en la base de datos.</li>
                         <li>Establecer el mecanismo WebSocket de transmisión en tiempo real para enviar el orden a la cocina.</li>
-                        <li>Probar el envío de órdenes desde el cajero a la cocina en diferentes escenarios (orden válida, orden vacía, errores en red).</li>
                     </ul>
                 </td>
             </tr>
@@ -60,23 +48,11 @@
                 </td>
             </tr>
             <tr>
-                <td>HU18</td>
-                <td>Como empleado de cocina, quiero confirmar la recepción del orden para que el cajero sepa que está en preparación.</td>
-                <td>
-                    <ul>
-                        <li>Agregar un botón "En preparación" en la interfaz de la cocina.</li>
-                        <li>Conectar el botón al backend para actualizar el estado del orden en la base de datos (por ejemplo, de "Pendiente" a "En preparación").</li>
-                        <li>Implementar un mecanismo de actualización en tiempo real para notificar al cajero sobre la confirmación de recepción del pedido.</li>
-                        <li>Probar el flujo de confirmación de orden y los estados asociados (transición de "Pendiente" a "En preparación").</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
                 <td>HU19</td>
                 <td>Como empleado de cocina, quiero notificar a la caja cuando un orden esté listo para que el cajero lo entregue al cliente.</td>
                 <td>
                     <ul>
-                        <li>Agregar un botón "Listo" en la interfaz de la cocina.</li>
+                        <li>Agregar un botón "Pedido Listo" en la interfaz de la cocina.</li>
                         <li>Conectar el botón al backend para cambiar el estado del orden a "Listo" en la base de datos.</li>
                         <li>Implementar una actualización en tiempo real en la interfaz del cajero para mostrar que el orden está listo para ser entregado.</li>
                         <li>Probar el flujo de cambio de estado de "En preparación" a "Listo" y la actualización automática en la interfaz del cajero.</li>
@@ -86,7 +62,7 @@
             </tr>
             <tr>
                 <td>HU20</td>
-                <td>Como cajero, quiero poder verificar el estado de cada orden (en preparación, listo) para informar al cliente el tiempo estimado.</td>
+                <td>Como cajero, quiero poder verificar el estado de cada orden para informar al cliente el tiempo estimado.</td>
                 <td>
                     <ul>
                         <li>Agregar una sección en la interfaz del cajero que muestre el estado actual de cada orden.</li>

@@ -1,6 +1,19 @@
+<style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center; /* Centra horizontalmente */
+      vertical-align: middle; /* Centra verticalmente */
+    }
+  </style>
 <body>
     <h4>Tabla de Historias de Usuario</h4>
-    <table>
+    <table border="1">
         <thead>
             <tr>
                 <th>ID</th>
@@ -11,20 +24,6 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>HU11</td>
-                <td>Como administrador quiero tener un acceso total al sistema y poder crear nuevos usuarios con el rol de cajeros.</td>
-                <td>4</td>
-                <td>MUST HAVE</td>
-                <td>AXEL BARZOLA Y DAVID ROSADO</td>
-            </tr>
-            <tr>
-                <td>HU12</td>
-                <td>Como administrador quiero dar un acceso parcial a los cajeros al sistema.</td>
-                <td>3</td>
-                <td>MUST HAVE</td>
-                <td>DAVID ROSADO Y AXEL BARZOLA</td>
-            </tr>
             <tr>
                 <td>HU16</td>
                 <td>Como cajero, quiero enviar un orden a la cocina con todos los detalles para que el equipo de cocina lo reciba en tiempo real.</td>
@@ -40,13 +39,6 @@
                 <td>DAVID ROSADO Y AXEL BARZOLA</td>
             </tr>
             <tr>
-                <td>HU18</td>
-                <td>Como empleado de cocina, quiero confirmar la recepción del orden para que el cajero sepa que está en preparación.</td>
-                <td>2</td>
-                <td>Must Have</td>
-                <td>AXEL BARZOLA Y JOSUE CAMAN</td>
-            </tr>
-            <tr>
                 <td>HU19</td>
                 <td>Como empleado de cocina, quiero notificar a la caja cuando un orden esté listo para que el cajero lo entregue al cliente.</td>
                 <td>2</td>
@@ -55,7 +47,7 @@
             </tr>
             <tr>
                 <td>HU20</td>
-                <td>Como cajero, quiero poder verificar el estado de cada orden (en preparación, listo) para informar al cliente el tiempo estimado.</td>
+                <td>Como cajero, quiero poder verificar el estado de cada orden para informar al cliente el tiempo estimado.</td>
                 <td>3</td>
                 <td>Must Have</td>
                 <td>DAVID ROSADO Y JOSUE CAMAN</td>

@@ -1,6 +1,19 @@
+<style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center; /* Centra horizontalmente */
+      vertical-align: middle; /* Centra verticalmente */
+    }
+  </style>
 <body>
 
-    <table>
+    <table border="1">
         <thead>
             <tr>
                 <th>ID</th>
@@ -13,78 +26,6 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>HU11</td>
-                <td>Acceso administrativo y creación de usuarios</td>
-                <td>Como administrador, quiero tener acceso completo al sistema y poder crear usuarios nuevos que sean cajeros, a fin de que haya más personas que puedan ayudar a vender.</td>
-                <td>Diseñar la interfaz de creación de usuarios</td>
-                <td>3</td>
-                <td>POR HACER</td>
-                <td>Barzola</td>
-            </tr>
-            <tr>
-                <td>HU11</td>
-                <td>Acceso administrativo y creación de usuarios</td>
-                <td>Como administrador, quiero tener acceso completo al sistema y poder crear usuarios nuevos que sean cajeros, a fin de que haya más personas que puedan ayudar a vender.</td>
-                <td>Implementar la lógica para crear nuevos usuarios</td>
-                <td>5</td>
-                <td>POR HACER</td>
-                <td>Rosado</td>
-            </tr>
-            <tr>
-                <td>HU11</td>
-                <td>Acceso administrativo y creación de usuarios</td>
-                <td>Como administrador, quiero tener acceso completo al sistema y poder crear usuarios nuevos que sean cajeros, a fin de que haya más personas que puedan ayudar a vender.</td>
-                <td>Validar los datos del nuevo usuario</td>
-                <td>3</td>
-                <td>POR HACER</td>
-                <td>Rosado</td>
-            </tr>
-            <tr>
-                <td>HU11</td>
-                <td>Acceso administrativo y creación de usuarios</td>
-                <td>Como administrador, quiero tener acceso completo al sistema y poder crear usuarios nuevos que sean cajeros, a fin de que haya más personas que puedan ayudar a vender.</td>
-                <td>Escribir pruebas unitarias para la creación de usuarios</td>
-                <td>3</td>
-                <td>POR HACER</td>
-                <td>Barzola</td>
-            </tr>
-            <tr>
-                <td>HU12</td>
-                <td>Registro de vencimientos de productos</td>
-                <td>Como empleado, quiero escribir cuándo se vence cada producto, para saber hasta cuándo se pueden usar.</td>
-                <td>Diseñar la interfaz para gestionar permisos</td>
-                <td>3</td>
-                <td>POR HACER</td>
-                <td>Rosado</td>
-            </tr>
-            <tr>
-                <td>HU12</td>
-                <td>Registro de vencimientos de productos</td>
-                <td>Como empleado, quiero escribir cuándo se vence cada producto, para saber hasta cuándo se pueden usar.</td>
-                <td>Implementar la lógica de permisos</td>
-                <td>5</td>
-                <td>POR HACER</td>
-                <td>Barzola</td>
-            </tr>
-            <tr>
-                <td>HU12</td>
-                <td>Registro de vencimientos de productos</td>
-                <td>Como empleado, quiero escribir cuándo se vence cada producto, para saber hasta cuándo se pueden usar.</td>
-                <td>Validar los permisos asignados</td>
-                <td>5</td>
-                <td>POR HACER</td>
-                <td>Rosado</td>
-            </tr>
-            <tr>
-                <td>HU12</td>
-                <td>Registro de vencimientos de productos</td>
-                <td>Como empleado, quiero escribir cuándo se vence cada producto, para saber hasta cuándo se pueden usar.</td>
-                <td>Escribir pruebas para la gestión de permisos</td>
-                <td>3</td>
-                <td>POR HACER</td>
-                <td>Barzola</td>
-            </tr>
             <tr>
                 <td>HU16</td>
                 <td>Envío de órdenes</td>
@@ -176,51 +117,6 @@
                 <td>Josue Caman</td>
             </tr>
             <tr>
-                <td>HU18</td>
-                <td>Confirmación de recepción de órdenes</td>
-                <td>Como empleado de cocina, quiero confirmar la recepción del orden para que el cajero sepa que está en preparación.</td>
-                <td>Agregar un botón de "Confirmar recepción" en la interfaz de la cocina.</td>
-                <td>2</td>
-                <td>POR HACER</td>
-                <td>Barzola</td>
-            </tr>
-            <tr>
-                <td>HU18</td>
-                <td>Confirmación de recepción de órdenes</td>
-                <td>Como empleado de cocina, quiero confirmar la recepción del orden para que el cajero sepa que está en preparación.</td>
-                <td>Conectar el botón al backend para actualizar el estado del orden en la base de datos (por ejemplo, de "Enviado" a "En preparación").</td>
-                <td>8</td>
-                <td>POR HACER</td>
-                <td>Rosado</td>
-            </tr>
-            <tr>
-                <td>HU18</td>
-                <td>Confirmación de recepción de órdenes</td>
-                <td>Como empleado de cocina, quiero confirmar la recepción del orden para que el cajero sepa que está en preparación.</td>
-                <td>Implementar un mecanismo de actualización en tiempo real para notificar al cajero sobre la confirmación de recepción del orden.</td>
-                <td>5</td>
-                <td>POR HACER</td>
-                <td>Rosado</td>
-            </tr>
-            <tr>
-                <td>HU18</td>
-                <td>Confirmación de recepción de órdenes</td>
-                <td>Como empleado de cocina, quiero confirmar la recepción del orden para que el cajero sepa que está en preparación.</td>
-                <td>Mostrar visualmente el estado "En preparación" en la interfaz del cajero.</td>
-                <td>3</td>
-                <td>POR HACER</td>
-                <td>Barzola</td>
-            </tr>
-            <tr>
-                <td>HU18</td>
-                <td>Confirmación de recepción de órdenes</td>
-                <td>Como empleado de cocina, quiero confirmar la recepción del orden para que el cajero sepa que está en preparación.</td>
-                <td>Probar el flujo de confirmación de orden y los estados asociados</td>
-                <td>3</td>
-                <td>POR HACER</td>
-                <td>Camán</td>
-            </tr>
-            <tr>
                 <td>HU19</td>
                 <td>Notificación de órdenes listas</td>
                 <td>Como empleado de cocina, quiero notificar a la caja cuando un orden esté listo para que el cajero lo entregue al cliente.</td>
@@ -277,7 +173,7 @@
             <tr>
                 <td>HU20</td>
                 <td>Verificación del estado de órdenes</td>
-                <td>Como cajero, quiero poder verificar el estado de cada orden (en preparación, listo) para informar al cliente el tiempo estimado.</td>
+                <td>Como cajero, quiero poder verificar el estado de cada orden para informar al cliente el tiempo estimado.</td>
                 <td>Implementar una actualización automática en tiempo real de los estados de los órdenes en la interfaz del cajero.</td>
                 <td>5</td>
                 <td>POR HACER</td>
@@ -286,7 +182,7 @@
             <tr>
                 <td>HU20</td>
                 <td>Verificación del estado de órdenes</td>
-                <td>Como cajero, quiero poder verificar el estado de cada orden (en preparación, listo) para informar al cliente el tiempo estimado.</td>
+                <td>Como cajero, quiero poder verificar el estado de cada orden para informar al cliente el tiempo estimado.</td>
                 <td>Mostrar el tiempo transcurrido desde la creación del orden para ayudar al cajero a estimar el tiempo de entrega.</td>
                 <td>5</td>
                 <td>POR HACER</td>
@@ -295,7 +191,7 @@
             <tr>
                 <td>HU20</td>
                 <td>Verificación del estado de órdenes</td>
-                <td>Como cajero, quiero poder verificar el estado de cada orden (en preparación, listo) para informar al cliente el tiempo estimado.</td>
+                <td>Como cajero, quiero poder verificar el estado de cada orden para informar al cliente el tiempo estimado.</td>
                 <td>Probar la correcta visualización y actualización de estados en tiempo real.</td>
                 <td>3</td>
                 <td>POR HACER</td>
