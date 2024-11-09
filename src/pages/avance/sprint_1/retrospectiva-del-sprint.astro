@@ -1,20 +1,17 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import ScrumTeamCriteriaTable from '../../components/ScrumTeamCriteriaTable.astro';
-import DeveloperTeamTable from '../../components/DeveloperTeamTable.astro';
-import Epicas from '../../components/Epicas.astro';
-import Dependencias from '../../components/Dependencias.astro';
-import HistoriasComprometidasActualizada from '../../components/HistoriasComprometidasActualizada.astro';
-import BucketSystem from '../../components/BucketSystem.astro';
-import ListaDeTareas from '../../components/ListaDeTareas.astro';
-import TablasHistoriasComprometidas from '../../components/TablasHistoriasComprometidas.astro';
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import AgreedActionableImprovements from '../../../components/AgreedActionableImprovements.astro';
+import EntregablesAceptados from '../../../components/EntregablesAceptados.astro';
+
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../sprint1';
+import TablasHistoriasComprometidas from '../../../components/TablasHistoriasComprometidas.astro';
+import TablaHistoriasPorPrioridadYEstimacion from '../../../components/TablaHistoriasPorPrioridadYEstimacion.astro';
+
 const modeloCanvasUrl = "/modelo-canvas.pdf"
 const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
 ---
-
 <!doctype html>
 <html lang="en">
 	<head>
@@ -67,7 +64,7 @@ const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
         justify-items: center;
         gap: 5px;
       }
-      .stakeholders p,strong {
+        p {
         margin: 0;
         padding: 0;
       }
@@ -77,17 +74,20 @@ const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
 	<body>
 		<Header />
 		<main>
-      <h1>Identificar tareas</h1>
+      <h1>Comprometer historias de usuario</h1>
       <div class="seccion">
         <hr>
         <h2>Entradas</h2>
         <hr>
         <ol>
           <li>
-            <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>
+            <a href="/avance/identificar-al-scrum-master-y-stakeholders#scrum-master">Scrum Master</a>
           </li>
           <li>
-            <a href="/avance/comprometer-historias-de-usuario#comprometidas">Historias de usuario comprometidos</a>
+            <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>        
+          </li>
+          <li>
+            <a href="/avance/sprint_1/demostrar-y-validar-sprint">Demostrar y validar Sprint</a>
           </li>
         </ol>
       </div>
@@ -95,26 +95,21 @@ const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
         <hr>
         <h2>Herramientas</h2>
         <hr>
-        <h3>Reuniones de planificacion del Sprint</h3>
-        <img width={800} height={800} src="/images/Reunion-9.4.jpg" alt="">
+        <h3>Reuniones de retrospectiva del Sprint</h3>
+        <img width={800} height={800} src="" alt="imagen por hacer">
         <br>
+
+        <!-- <Moscow /> -->
       </div>
       <div class="seccion">
         <hr>
         <h2>Salidas</h2>
         <hr>
-        <div id="lista-de-tareas">
-            <h4>Lista de tareas</h4>
-          <ListaDeTareas/>
+        <div id="agreed-actionable-improvements">
+          <h3>Agreed actionable improvements</h3>
+          <AgreedActionableImprovements/>
         </div>
-        <div id="comprometidas-actualizada">
-            <h4>Historias de usuario comprometidas actualizada</h4>
-          <HistoriasComprometidasActualizada/>
-        </div>
-        <div id="dependencias">
-            <h4>Dependencias</h4>
-          <Dependencias/>
-        </div>
+        
       </div>
 		</main>
 		<Footer />

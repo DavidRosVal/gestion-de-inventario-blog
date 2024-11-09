@@ -1,19 +1,15 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import ScrumTeamCriteriaTable from '../../components/ScrumTeamCriteriaTable.astro';
-import TablasHistoriasComprometidas from '../../components/TablasHistoriasComprometidas.astro';
-import Epicas from '../../components/Epicas.astro';
-import PrioritizedProductBacklog from '../../components/PrioritizedProductBacklog.astro';
-import Moscow from '../../components/Moscow.astro';
-import TablaHistoriasPorPrioridadYEstimacion from '../../components/TablaHistoriasPorPrioridadYEstimacion.astro';
-import TablaEstimacionDeHistorias from '../../components/TablaEstimacionDeHistorias.astro';
-
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+import Dependencias from '../../../components/Dependencias.astro';
+import HistoriasComprometidasActualizada from '../../../components/HistoriasComprometidasActualizada.astro';
+import ListaDeTareas from '../../../components/ListaDeTareas.astro';
 const modeloCanvasUrl = "/modelo-canvas.pdf"
 const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
 ---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -66,7 +62,7 @@ const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
         justify-items: center;
         gap: 5px;
       }
-        p {
+      .stakeholders p,strong {
         margin: 0;
         padding: 0;
       }
@@ -76,7 +72,7 @@ const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
 	<body>
 		<Header />
 		<main>
-      <h1>Comprometer historias de usuario</h1>
+      <h1>Identificar tareas</h1>
       <div class="seccion">
         <hr>
         <h2>Entradas</h2>
@@ -86,10 +82,7 @@ const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
             <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>
           </li>
           <li>
-            <a href="/avance/estimar-historias-de-usuario#historias-de-usuario-estimadas">Historias de Usuario Estimadas</a>
-          </li>
-          <li>
-            <a href="/avance/realizar-la-planificacion-de-lanzamiento#duracion-del-sprint">Duracion del Sprint</a>
+            <a href="/avance/comprometer-historias-de-usuario#comprometidas">Historias de usuario comprometidos</a>
           </li>
         </ol>
       </div>
@@ -98,30 +91,27 @@ const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
         <h2>Herramientas</h2>
         <hr>
         <h3>Reuniones de planificacion del Sprint</h3>
-        <img width={800} height={800} src="/images/Reunion-9.3.jpg" alt="">
+        <img width={800} height={800} src="/images/Reunion-9.4.jpg" alt="">
         <br>
-
-        <!-- <Moscow /> -->
       </div>
       <div class="seccion">
         <hr>
         <h2>Salidas</h2>
         <hr>
-        <div id="historias-de-usuario-prioridad-estimacion">
-          <h3>Tabla de historias de usuario prioridad y estimacion</h3>
-          <TablaHistoriasPorPrioridadYEstimacion/>
+        <div id="lista-de-tareas">
+            <h4>Lista de tareas</h4>
+          <ListaDeTareas/>
         </div>
-        <hr>
-        <div id="comprometidas">
-          <h3>Tabla de historias de usuarios comprometidas</h3>
-          <strong>Estimaciones y Selección</strong>
-          <p> El equipo analiza la lista y decide que las siguientes historias son las más relevantes para el próximo sprint, teniendo en cuenta su capacidad de 12 puntos.</p>
-          <br>
-          <TablasHistoriasComprometidas/>
+        <div id="comprometidas-actualizada">
+            <h4>Historias de usuario comprometidas actualizada</h4>
+          <HistoriasComprometidasActualizada/>
+        </div>
+        <div id="dependencias">
+            <h4>Dependencias</h4>
+          <Dependencias/>
         </div>
       </div>
 		</main>
 		<Footer />
 	</body>
 </html>
-

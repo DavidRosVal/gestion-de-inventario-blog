@@ -47,46 +47,81 @@ export const AVANCES = [
       title: 'Realizar la planificacion del lanzamiento',
     }
   },
+  // {
+  //   slug: 'crear-historias-de-usuario',
+  //   data: {
+  //     heroImage: '',
+  //     title: 'Crear historias de usuario',
+  //   }
+  // },
+  // {
+  //   slug: 'estimar-historias-de-usuario',
+  //   data: {
+  //     heroImage: '',
+  //     title: 'Estimar historias de usuario',
+  //   }
+  // },
+  // {
+  //   slug: 'comprometer-historias-de-usuario',
+  //   data: {
+  //     heroImage: '',
+  //     title: 'Comprometer historias de usuario',
+  //   }
+  // },
+  // {
+  //   slug: 'identificar-tareas',
+  //   data: {
+  //     heroImage: '',
+  //     title: 'Identificar tareas',
+  //   }
+  // },
+  // {
+  //   slug: 'estimar-tareas',
+  //   data: {
+  //     heroImage: '',
+  //     title: 'Estimar tareas',
+  //   }
+  // },
+  // {
+  //   slug: 'crear-el-sprint-backlog',
+  //   data: {
+  //     heroImage: '',
+  //     title: 'Crear el Sprint Backlog',
+  //   }
+  // },
+  // {
+  //   slug: 'demostrar_y_validar_el_sprint',
+  //   data: {
+  //     heroImage: '',
+  //     title: 'Demostrar y validar el Sprint',
+  //   }
+  // },
+  // {
+  //   slug: 'retrospectiva_del_sprint',
+  //   data: {
+  //     heroImage: '',
+  //     title: 'Retrospectiva del Sprint',
+  //   }
+  // },
+  // {
+  //   slug: 'enviar_entregables',
+  //   data: {
+  //     heroImage: '',
+  //     title: 'Enviar Entregables'
+  //   }
+  // },
   {
-    slug: 'crear-historias-de-usuario',
+    slug: 'sprint-1',
     data: {
       heroImage: '',
-      title: 'Crear historias de usuario',
+      title: 'Sprint 1',
     }
   },
   {
-    slug: 'estimar-historias-de-usuario',
+    slug: 'sprint-2',
     data: {
       heroImage: '',
-      title: 'Estimar historias de usuario',
-    }
-  },
-  {
-    slug: 'comprometer-historias-de-usuario',
-    data: {
-      heroImage: '',
-      title: 'Comprometer historias de usuario',
-    }
-  },
-  {
-    slug: 'identificar-tareas',
-    data: {
-      heroImage: '',
-      title: 'Identificar tareas',
-    }
-  },
-  {
-    slug: 'estimar-tareas',
-    data: {
-      heroImage: '',
-      title: 'Estimar tareas',
-    }
-  },
-  {
-    slug: 'crear-el-sprint-backlog',
-    data: {
-      heroImage: '',
-      title: 'Crear el Sprint Backlog',
+      title: 'Sprint 2',
     }
   },
 ]
