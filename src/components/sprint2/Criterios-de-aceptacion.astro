@@ -1,0 +1,125 @@
+<style>
+.b {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #007BFF;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.priority {
+  font-size: 0.8rem;
+  color: #555;
+  font-weight: bold;
+}
+</style>
+
+<div class=".b">
+    <div class="container">
+      <div class="card">
+        <h3>HU05</h3>
+        <h4>Botones de funciones</h4>
+        <p>Como cliente, quiero un menú de botones de navegación para ingresar a las diferentes secciones.</p>
+        <p><strong>Criterio de aceptación:</strong> El menú debe estar en todas las páginas, ser claro y funcional en escritorio y móviles.</p>
+        <span class="priority">Prioridad →</span>
+      </div>
+      <div class="card">
+        <h3>HU06</h3>
+        <h4>Enlaces a redes sociales</h4>
+        <p>Como cliente, quiero un footer con enlaces a redes sociales e información de contacto para acceder a más contenido.</p>
+        <p><strong>Criterio de aceptación:</strong> El footer debe incluir enlaces a redes sociales y contacto, funcionando correctamente en todos los dispositivos.</p>
+        <span class="priority">Prioridad →</span>
+      </div>
+      <div class="card">
+        <h3>HU07</h3>
+        <h4>Ajuste de pantalla</h4>
+        <p>Como cliente, quiero que la página esté diseñada de forma responsiva para navegar desde dispositivos móviles.</p>
+        <p><strong>Criterio de aceptación:</strong> La página debe ser responsiva y funcional en distintos dispositivos, manteniendo un diseño claro.</p>
+        <span class="priority">Prioridad →</span>
+      </div>
+      <div class="card">
+        <h3>HU08</h3>
+        <h4>Carta digitalizada</h4>
+        <p>Como cliente, quiero una descripción de cada plato para tomar una decisión informada sobre qué pedir.</p>
+        <p><strong>Criterio de aceptación:</strong> Los textos deben ser persuasivos y aprobados por el Product Owner, sin errores y alineados con la marca.</p>
+        <span class="priority">Prioridad →</span>
+      </div>
+      <div class="card">
+        <h3>HU09</h3>
+        <h4>Calidad de las imágenes</h4>
+        <p>Como cliente, quiero visualizar imágenes de alta calidad para obtener una buena impresión de la carta.</p>
+        <p><strong>Criterio de aceptación:</strong> Las imágenes deben ser de alta calidad, cargar rápido y adaptarse bien a todos los dispositivos sin distorsión.</p>
+        <span class="priority">Prioridad →</span>
+      </div>
+      <div class="card">
+        <h3>HU10</h3>
+        <h4>Acceso restringido</h4>
+        <p>Como administrador, quiero que solo yo tenga acceso al dashboard para proteger la información sensible del sistema.</p>
+        <p><strong>Criterio de aceptación:</strong> Solo el administrador autenticado podrá ver el dashboard; otros usuarios con acceso al sistema no lo verán.</p>
+        <span class="priority">Prioridad →</span>
+      </div>
+      <div class="card">
+        <h3>HU11</h3>
+        <h4>Opción de filtrado</h4>
+        <p>Como administrador, quiero filtrar los ingresos y órdenes por fecha, para observar el rendimiento del restobar.</p>
+        <p><strong>Criterio de aceptación:</strong> El sistema actualizará los datos del dashboard según el rango de fechas y categorías seleccionadas.</p>
+        <span class="priority">Prioridad →</span>
+      </div>
+      <div class="card">
+        <h3>HU12</h3>
+        <h4>Compatibilidad móvil</h4>
+        <p>Como administrador, quiero que el dashboard se ajuste al tamaño de la pantalla para verlo en dispositivos móviles.</p>
+        <p><strong>Criterio de aceptación:</strong> El sistema ajustará automáticamente el dashboard para verse correctamente en pantallas de distintos tamaños.</p>
+        <span class="priority">Prioridad →</span>
+      </div>
+      <div class="card">
+        <h3>HU13</h3>
+        <h4>Gráficos interactivos</h4>
+        <p>Como administrador, quiero ver diferentes tipos de gráficos para monitorear tendencias de diferentes maneras.</p>
+        <p><strong>Criterio de aceptación:</strong> El sistema permitirá cambiar entre gráficos de línea, barra y pastel, con opciones para interactuar con los datos mostrados.</p>
+        <span class="priority">Prioridad →</span>
+      </div>
+    </div>
+  </div>

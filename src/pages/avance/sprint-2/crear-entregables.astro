@@ -1,0 +1,214 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+import Il_actualizado from '../../../components/sprint2/InpedimentLogActualizado.astro';
+import Entregables from '../../../components/sprint2/EntregablesDelSprint.astro';
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+      .stakeholders p,strong {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Estimar historias de Usuario</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+          <li>
+            <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>
+          </li>
+          <li>
+            <a href="/avance/sprint-2/crear-el-sprint-backlog#sprint-backlog">Sprint Backlog</a>
+          </li>
+          <li>
+            <p>Scrumboard</p>
+            <img width={800}  src="/images/scrumboard.jpeg" alt="" />
+          </li>
+          <li>
+            <p>Impediment log</p>
+            <table border=  "1">
+                <thead>
+                    <tr>
+                        <th>Obstáculo</th>
+                        <th>Descripción</th>
+                        <th>Interno/Externo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Los miembros del equipo tenían otras tareas</td>
+                        <td>El equipo tenía que cumplir con otras responsabilidades además del proyecto, lo que afectó la disponibilidad de tiempo.</td>
+                        <td>Interno</td>
+                    </tr>
+                    <tr>
+                        <td>Falta de documentación actualizada</td>
+                        <td>No se disponía de documentación clara y actualizada, lo que dificultó la comprensión del proyecto.</td>
+                        <td>Interno</td>
+                    </tr>
+                    <tr>
+                        <td>Adopción lenta de metodología ágil</td>
+                        <td>El equipo tuvo dificultades para adaptarse rápidamente a la metodología ágil, lo que ralentizó el progreso inicial.</td>
+                        <td>Interno</td>
+                    </tr>
+                    <tr>
+                        <td>No se pudo hablar con los stakeholders debido al paro</td>
+                        <td>La falta de comunicación con los stakeholders debido a un paro afectó la toma de decisiones y el avance del proyecto.</td>
+                        <td>Externo</td>
+                    </tr>
+                    <tr>
+                        <td>Cambios en lo que se pedía para el proyecto</td>
+                        <td>Los requerimientos del proyecto cambiaron varias veces, lo que causó retrasos y confusión en el equipo.</td>
+                        <td>Externo</td>
+                    </tr>
+                </tbody>
+            </table>
+          </li>
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Experiencia del equipo</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Rol</th>
+                    <th>Apellidos y Nombres</th>
+                    <th>Experiencia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Scrum Master</td>
+                    <td>López Puris, Raúl Andersson</td>
+                    <td>
+                        Tiene buen conocimiento de la metodología Scrum. Ha trabajado organizando reuniones, motivando equipos, 
+                        y ayudando a resolver problemas dentro de los proyectos. También tiene experiencia explicando cómo usar herramientas 
+                        como Jira y Trello para gestionar tareas.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Product Owner (Dueño del Producto)</td>
+                    <td>Otazu Quispe, Diego Armando</td>
+                    <td>
+                        Se destaca por organizar ideas y convertirlas en pasos claros. Ha trabajado en proyectos donde era responsable de 
+                        priorizar tareas importantes para cumplir objetivos. Conoce cómo hablar con los clientes y entender sus necesidades 
+                        para plasmarlas en el producto final.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Development Team (Equipo de Desarrollo)</td>
+                    <td>Rosado Valerio, Juan Pablo David</td>
+                    <td>
+                        Experiencia en desarrollo web, especialmente en la creación de páginas dinámicas. También sabe trabajar con bases de 
+                        datos para almacenar información y resolver errores técnicos que surgen durante el desarrollo.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Development Team (Equipo de Desarrollo)</td>
+                    <td>Barzola Mendoza, Axel Benjamín</td>
+                    <td>
+                        Tiene conocimientos básicos de diseño gráfico, como crear logotipos, elegir colores adecuados y diseñar interfaces 
+                        simples que se vean bien. Además, está aprendiendo sobre cómo integrar estos diseños en proyectos de desarrollo.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Development Team (Equipo de Desarrollo)</td>
+                    <td>Camán Aguirre, Josué Sebastián</td>
+                    <td>
+                        Experto en realizar pruebas de software para asegurarse de que el programa funcione sin errores. Tiene experiencia en 
+                        revisar cómo trabajan los sistemas bajo diferentes condiciones y en dar sugerencias para mejorar la calidad del producto.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Reunicon de planificacion del Sprint</h3><br>
+        <img width={800} height={800} src="/images/sprint2_planning_poker.jpeg" alt="">
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="entregables">
+          <Entregables/>
+        </div>
+        <br>
+        <div id="scrumb_actualizado">
+            <h4>ScrumBoard Actualizado</h4>
+            <img width={800} src="/images/scrumboard_actualizado.jpeg" alt="">
+          </div>
+          <br>
+
+        <div id="il_actualizado">
+            <h4>Inpediment Log Actualizado</h4>
+            <Il_actualizado/>
+        </div>
+      </div>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,111 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+
+import HistoriasDeUsuario from '../../../components/sprint2/HistoriasDeUsuario.astro';
+import FirstBacklog from '../../../components/sprint2/first-backlog.astro';
+import CriteriosDeAceptacion from '../../../components/sprint2/Criterios-de-aceptacion.astro';
+
+
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+		main {
+				width: 960px;
+			}
+		.seccion {
+        margin-bottom: 3em;
+        }
+        h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        }
+        h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        }
+        h1 {
+        text-align: center;
+        margin-bottom: 1em;
+        }
+        .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        }
+        .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+        }
+        .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        }
+        .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+        }
+        
+		</style>
+	</head>
+
+
+<body>
+    <Header />
+    <main>
+    <h1>Crear historias de Usuario</h1>
+    <div class="seccion">
+    <hr>
+    <h2>Entradas</h2>
+    <hr>
+    <ol>
+        <li>
+        <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Principal de Scrum</a>
+        </li>
+        <li>
+        <p>Backlog Priorizado del producto</p>
+        <FirstBacklog/>
+        </li>
+        <li>
+        <a href="/avance/crear-el-backlog-priorizado-del-producto#criterios-terminado">Criterios de terminado</a>
+        </li>
+        <li>
+        <a href="/avance/desarrollar-epicas#prototipos">Prototipos</a>
+        </li>
+    </ol>
+    </div>
+    <div class="seccion">
+    <hr>
+    <h2>Herramientas</h2>
+    <hr>
+    <h3>Talleres de historias del usuario</h3>
+    <div class="image-team-member">
+        <video width={1020} controls>
+            <source src="/videos/sprint2_hu.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de videos.
+          </video>
+    </div>
+    </div>
+<div class="seccion">
+    <hr>
+    <h2>Salidas</h2>
+    <div id="historias-de-usuario">
+    <h3>Historias de usuario</h3>
+    <HistoriasDeUsuario/>
+    </div>
+    <h3>Criterios de aceptacion de historias de usuario</h3>
+    <CriteriosDeAceptacion/>
+</div>
+</main>
+    <Footer />
+</body>

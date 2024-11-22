@@ -105,19 +105,36 @@ const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
         <h2>Salidas</h2>
         <hr>
         <div id="product-backlog">
-          <h3>Backlog Priorizado del Producto</h3>
+          <h4>Backlog Priorizado del Producto</h4>
           <iframe src={"/prioritized-product-backlog.pdf"} width="100%" height="600px"></iframe>
         </div>
         <div id="criterios-terminado">
           <h3>Criterios de Terminado</h3>
-          <ul>
-            <li>
-              El prototipo pasa todas las pruebas de uso y rendimiento aceptadas por el personal del restobar.
-            </li>
-            <li>
-              El sistema permite a los usuarios gestionar el inventario de manera sencilla y rápida, cumpliendo con las necesidades del equipo.
-            </li>
-          </ul>
+          <div class="epica-container">
+            <h4>Épica 1: Gestión de órdenes</h4>
+            <ul>
+                <li>Se han cumplido todas las condiciones acordadas para cada historia de usuario y el Product Owner ha revisado y aprobado las pruebas.</li>
+                <li>La documentación técnica necesaria fue revisada y actualizada por el Scrum Master.</li>
+                <li>Se ha realizado una sesión de feedback que involucra a los stakeholders.</li>
+            </ul>
+        </div>
+    
+        <div class="epica-container">
+            <h4>Épica 2: Desarrollo de la landing page</h4>
+            <ul>
+                <li>La landing page ha pasado por pruebas de compatibilidad de rendimiento entre diferentes navegadores y dispositivos.</li>
+                <li>Los stakeholders confirmaron la funcionalidad responsiva del sistema al usarlo en sus dispositivos móviles.</li>
+                <li>Se ha configurado un sistema de backup para el código fuente y contenido del sitio web.</li>
+            </ul>
+        </div>
+    
+        <div class="epica-container">
+            <h4>Épica 3: Dashboard de control</h4>
+            <ul>
+                <li>El dashboard permite monitorear en tiempo real el estado de las órdenes.</li>
+                <li>Los usuarios autorizados (administrador) pueden acceder al dashboard sin problemas de seguridad.</li>
+            </ul>
+        </div>
         </div>
       </div>
 		</main>

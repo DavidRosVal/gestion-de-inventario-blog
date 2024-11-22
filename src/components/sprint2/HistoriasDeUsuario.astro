@@ -1,0 +1,104 @@
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cartas {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  color: #007BFF;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.priority {
+  font-size: 0.8rem;
+  color: #555;
+  font-weight: bold;
+}
+</style>
+<div class="cartas">
+  <div class="container">
+    <div class="card">
+      <h3>HU05</h3>
+      <h4>Botones de funciones</h4>
+      <p>Como cliente, quiero un menú de botones de navegación para ingresar a las diferentes secciones.</p>
+      <span class="priority">Prioridad →</span>
+    </div>
+    <div class="card">
+      <h3>HU06</h3>
+      <h4>Enlaces a redes sociales</h4>
+      <p>Como cliente, quiero un footer con enlaces a redes sociales e información de contacto para acceder a más contenido.</p>
+      <span class="priority">Prioridad →</span>
+    </div>
+    <div class="card">
+      <h3>HU07</h3>
+      <h4>Ajuste de pantalla</h4>
+      <p>Como cliente, quiero que la página esté diseñada de forma responsiva para navegar desde dispositivos móviles.</p>
+      <span class="priority">Prioridad →</span>
+    </div>
+    <div class="card">
+      <h3>HU10</h3>
+      <h4>Acceso restringido</h4>
+      <p>Como administrador, quiero que solo yo tenga acceso al dashboard para proteger la información sensible del sistema.</p>
+      <span class="priority">Prioridad →</span>
+    </div>
+    <div class="card">
+      <h3>HU11</h3>
+      <h4>Opción de filtrado</h4>
+      <p>Como administrador, quiero filtrar los ingresos y órdenes por fecha, para observar el rendimiento del restobar.</p>
+      <span class="priority">Prioridad →</span>
+    </div>
+    <div class="card">
+      <h3>HU12</h3>
+      <h4>Compatibilidad móvil</h4>
+      <p>Como administrador, quiero que el dashboard se ajuste al tamaño de la pantalla para verlo en dispositivos móviles.</p>
+      <span class="priority">Prioridad →</span>
+    </div>
+  </div>
+</div>
+</html>
