@@ -1,0 +1,119 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+import EffortEstimatedTaskList from '../../../components/sprint3/EffoirtEstimatedList.astro';
+import TareasEstimadas from '../../../components/sprint3/TareasEstimadas.astro';
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+      .stakeholders p,strong {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Estimar Tareas</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+          <li>
+            <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>
+          </li>
+          <li>
+            <a href="/avance/sprint-3/identificar-tareas#lista-de-tareas">Lista de Tareas</a>
+          </li>
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <div class="image-team-member">
+          <video width={1020} controls>
+              <source src="/videos/sprint3-estimar_tareas.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+        <br>
+        <h3>Metodos de estimacion</h3>
+        <p>Para realizar una correcta estimación de las tareas e historias de usuario, consideramos los siguientes criterios:</p>
+        <p>El método utilizado es el juicio de expertos (expert judgment), en el que participaron los integrantes Rosado,
+         Barzola y Camán, quienes forman parte del equipo de desarrollo.
+          El objetivo fue consultarlos, basándose en los criterios mencionados anteriormente, para obtener sus opiniones que ayuden a completar las tareas. 
+          Tras la reunión vía Google Meet, se consiguieron las siguientes estimaciones:</p>
+        <TareasEstimadas/>
+        </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="effort">
+            <h4>Effort Estimated Task Lis</h4>
+          <EffortEstimatedTaskList/>
+        </div>
+    
+		</main>
+		<Footer />
+	</body>
+</html>

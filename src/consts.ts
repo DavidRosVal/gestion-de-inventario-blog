@@ -124,4 +124,11 @@ export const AVANCES = [
       title: 'Sprint 2',
     }
   },
+  {
+    slug: 'sprint-3',
+    data: {
+      heroImage: '',
+      title: 'Sprint 3',
+    }
+  },
 ]

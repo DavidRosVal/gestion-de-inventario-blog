@@ -1,0 +1,154 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+
+import Hu_Sprint3 from '../../../components/sprint3/Hu_Sprint3.astro';
+import CriteriosDeAceptacion from '../../../components/sprint3/CriteriosTerminado.astro';
+
+
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+		main {
+				width: 960px;
+			}
+		.seccion {
+        margin-bottom: 3em;
+        }
+        h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        }
+        h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        }
+        h1 {
+        text-align: center;
+        margin-bottom: 1em;
+        }
+        .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        }
+        .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+        }
+        .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        }
+        .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+        }
+        
+		</style>
+	</head>
+
+
+<body>
+    <Header />
+    <main>
+    <h1>Crear historias de Usuario</h1>
+    <div class="seccion">
+    <hr>
+    <h2>Entradas</h2>
+    <hr>
+    <ol>
+        <li>
+        <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Principal de Scrum</a>
+        </li>
+        <li>
+        <p>Backlog Priorizado del producto</p>     
+        <h4>Épicas</h4>
+        <table>
+            <thead>
+                <tr>
+                <th>Épicas</th>
+                <th>Valor</th>
+                <th>Tamaño (esfuerzo)</th>
+                <th>Prioridad (WSJF)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>E01 - Gestión de órdenes</td>
+                <td>75</td>
+                <td>3</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>E02 - Landing page persuasiva</td>
+                <td>60</td>
+                <td>3</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>E03 - Dashboard de control</td>
+                <td>36</td>
+                <td>2</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>E04 - Gestión de usuarios</td>
+                <td>30</td>
+                <td>2</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+        </li>
+        <li>
+        <p id="criterios-terminado">Criterios de terminado</p>
+        <h5>Épica 4: Gestión de usuarios</h5><br>
+
+        <h5>Pruebas del Administrador</h5>
+        <p>Se realizaron pruebas por parte del administrador para garantizar que todas las operaciones del CRUD se ejecuten sin errores y cumplan con los criterios de aceptación de las historias de usuario.</p>
+
+        <h5>Notificaciones al Empleado de Cocina</h5>
+        <p>El empleado de cocina recibe notificaciones automáticas que especifican los pedidos cancelados o modificados por el cajero, los cuales fueron aprobados tras las pruebas realizadas.</p>
+
+        <h5>Documentación del Sprint Final</h5>
+        <p>La documentación de las actividades del sprint final incorpora la metodología ágil Scrum junto con la integración de técnicas de XP.</p>
+        </li>
+        <li>
+        <a href="/avance/desarrollar-epicas#prototipos">Prototipos</a>
+        </li>
+    </ol>
+    </div>
+    <div class="seccion">
+    <hr>
+    <h2>Herramientas</h2>
+    <hr>
+    <h3>Talleres de historias del usuario</h3>
+    <img width={800} height={800} src="/images/sprint3-hu.jpeg" alt="">
+    </div>
+<div class="seccion">
+    <hr>
+    <h2>Salidas</h2>
+    <div id="historias-de-usuario">
+    <h3>Historias de usuario</h3>
+    <Hu_Sprint3/>
+    </div>
+    <h3>Criterios de aceptacion de historias de usuario</h3>
+    <CriteriosDeAceptacion/>
+</div>
+</main>
+    <Footer />
+</body>

@@ -1,0 +1,142 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+import HUComprometidas from '../../../components/sprint3/HUComprometidas.astro';
+import CriteriosTerminado from '../../../components/sprint3/CriteriosTerminado.astro';
+import Calendario from '../../../components/sprint3/Calendario.astro';
+
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+        p {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Codificacion</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+            <li>
+            <a href="/avance/sprint-3/diseno#descripcion-xp">Descripcion XP</a>
+            </li>
+          <li>
+            <a href="/avance/sprint-3/diseno#equipo-xp">Equipo XP</a>
+          </li>
+          <li>
+            <a href="/avance/sprint-3/diseno#hu_xp">Historias de Usuario y tareas XP</a>
+          </li>
+          
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Integracion Continua</h3>
+        <!-- <div class="image-team-member">
+          <video width={1020} controls>
+              <source src="/videos/sprint3-comprometer_hu.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de videos.
+            </video> -->
+            <h4>Proposito:</h4>
+            <p>Garantizar que el sistema sea funcional en todo momento y que las actualizaciones al código no introduzcan errores o fallos en la funcionalidad existente.</p>
+            <br><h4>Principios de Integración Continua</h4>
+    <ul>
+        <li><strong>Integración frecuente:</strong> Todos los desarrolladores deben integrar su código en el repositorio compartido varias veces al día, al menos una vez al final de cada jornada de trabajo.</li>
+        <li><strong>Pruebas automáticas:</strong> Cada integración debe pasar un conjunto de pruebas automáticas para verificar que el código no introduzca errores. Esto incluye pruebas unitarias, pruebas de integración y cualquier otra prueba relevante para el proyecto.</li>
+        <li><strong>Retroalimentación rápida:</strong> El sistema de CI debe proporcionar retroalimentación inmediata si la integración ha fallado, ya sea por error en las pruebas o conflictos de código.</li>
+    </ul>
+        </div>
+
+        <!-- <Moscow /> -->
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="comprometidas">
+          <h3>Estandares</h3>
+          <p>En el desarrollo de nuestro sistema, hemos adoptado el enfoque de microservicios como el estándar arquitectónico. Esto implica que la aplicación estará compuesta por un conjunto de servicios pequeños, independientes y autónomos, cada uno encargado de una funcionalidad específica del sistema.
+                
+            Cada microservicio será responsable de una parte del dominio de negocio y podrá ser desarrollado, probado, desplegado y escalado de manera independiente. Esta arquitectura facilita la modularidad, mejora la flexibilidad y permite un mayor control sobre los ciclos de desarrollo y los despliegues.</p>
+          
+          <br>
+          <h3>Programacion en parejas</h3>
+    <p>En nuestro equipo, hemos adoptado la práctica de <strong>programación en parejas</strong> como estándar de desarrollo. Esta práctica implica que dos desarrolladores trabajen juntos en una misma estación de trabajo, colaborando activamente para diseñar, escribir, probar y depurar el código en tiempo real.</p>
+
+    <br><h4>La programación en parejas se llevará a cabo bajo el siguiente enfoque:</h4>
+    <ul>
+        <li><strong>Roles rotativos:</strong> Uno de los desarrolladores asumirá el rol de "conductor", escribiendo el código, mientras que el otro actuará como "navegante", proporcionando retroalimentación, sugiriendo soluciones y asegurándose de que el código siga las mejores prácticas y los estándares del proyecto.</li>
+        <li><strong>Colaboración constante:</strong> La programación en parejas fomenta una constante comunicación y colaboración entre los miembros del equipo, lo que permite una rápida resolución de problemas y una mejor toma de decisiones durante el desarrollo del código.</li>
+    </ul>
+    
+    <img width={800} height={800} src="/images/sprint3-pp_cl.jpeg" alt="">
+    <img width={800} height={800} src="/images/sprint3-pp_bd.jpeg" alt="">
+        </div>
+      </div>
+		</main>
+		<Footer />
+	</body>
+</html>

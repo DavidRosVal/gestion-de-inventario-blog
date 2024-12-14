@@ -1,0 +1,205 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+
+import HuXp from '../../../components/sprint3/HuXp.astro';
+import CriteriosDeAceptacion from '../../../components/sprint3/CriteriosTerminado.astro';
+
+
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+		main {
+				width: 960px;
+			}
+		.seccion {
+        margin-bottom: 3em;
+        }
+        h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        }
+        h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        }
+        h1 {
+        text-align: center;
+        margin-bottom: 1em;
+        }
+        .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        }
+        .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+        }
+        .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+        }
+        .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+        }
+        
+		</style>
+	</head>
+
+
+<body>
+    <Header />
+    <main>
+    <h1>Diseño</h1>
+    <div class="seccion">
+    <hr>
+    <h2>Entradas</h2>
+    <hr>
+    <ol>
+        <li>
+        <p id="descripcion-xp">Descripcion del equipo XP</p><br>
+
+    <p><strong>Cliente:</strong> Grados Gil, Allison Lucía  
+    - El cliente es quien tiene el control y la visión final del proyecto. Es responsable de proporcionar los requisitos y la retroalimentación durante todo el proceso de desarrollo.</p>
+    
+    <p><strong>Encargado de pruebas:</strong> Rosado Valerio, Juan Pablo David  
+    - El encargado de pruebas tiene la responsabilidad de asegurar la calidad del software. Realiza pruebas exhaustivas para verificar que todas las funcionalidades estén operando correctamente y reporta cualquier problema encontrado.</p>
+    
+    <p><strong>Encargado de seguimiento (Tracker):</strong> Barzola Mendoza, Axel Benjamín  
+    - El encargado de seguimiento o "tracker" es quien monitorea el progreso de las tareas. Se asegura de que las actividades se realicen de acuerdo con los plazos y los requisitos establecidos, y mantiene al equipo informado sobre el avance.</p>
+    
+    <p><strong>Entrenador (Coach):</strong> López Puris, Raúl Andersson  
+    - El entrenador es responsable de guiar al equipo en cuanto a las mejores prácticas de desarrollo ágil y de promover una cultura de trabajo en equipo. Ayuda a resolver conflictos y a mantener la moral alta dentro del equipo.</p>
+    
+    <p><strong>Consultor:</strong> Arqque Pantigozo, Antonio  
+    - El consultor ofrece su experiencia y conocimientos especializados en áreas técnicas o de negocio. Proporciona asesoramiento para mejorar los procesos, herramientas y arquitecturas utilizadas en el proyecto.</p>
+    
+    <p><strong>Jefe del proyecto:</strong> Otazu Quispe, Diego Armando  
+    - El jefe del proyecto tiene la responsabilidad de supervisar la ejecución global del proyecto. Se asegura de que los objetivos sean alcanzados dentro de los plazos y presupuestos establecidos, gestionando los recursos y coordinando con todas las partes involucradas.</p>
+    
+    <p><strong>Desarrolladores:</strong> Rosado Valerio, Juan Pablo David, Barzola Mendoza, Axel Benjamín, Camán Aguirre, Josué Sebastián  
+    - Los desarrolladores son los encargados de escribir el código y construir el sistema. Trabajan juntos para implementar nuevas funcionalidades, corregir errores y realizar mejoras según las especificaciones proporcionadas. Son los motores técnicos del equipo y trabajan estrechamente con el resto de los miembros para cumplir con los objetivos del proyecto.</p>
+        </li>
+        <li>
+        <p id="equipo-xp">Equipo XP</p>     
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Rol</th>
+                    <th>Apellidos y Nombres</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cliente</td>
+                    <td>Grados Gil, Allison Lucía</td>
+                </tr>
+                <tr>
+                    <td>Encargado de pruebas</td>
+                    <td>Rosado Valerio, Juan Pablo David</td>
+                </tr>
+                <tr>
+                    <td>Encargado de seguimiento (tracker)</td>
+                    <td>Barzola Mendoza, Axel Benjamín</td>
+                </tr>
+                <tr>
+                    <td>Entrenador (coach)</td>
+                    <td>López Puris, Raúl Andersson</td>
+                </tr>
+                <tr>
+                    <td>Consultor</td>
+                    <td>Arqque Pantigozo, Antonio</td>
+                </tr>
+                <tr>
+                    <td>Jefe del proyecto</td>
+                    <td>Otazu Quispe, Diego Armando</td>
+                </tr>
+                <tr>
+                    <td>Desarrolladores</td>
+                    <td>Rosado Valerio, Juan Pablo David, Barzola Mendoza, Axel Benjamín, Camán Aguirre, Josué Sebastián</td>
+                </tr>
+            </tbody>
+        </table><br>
+
+
+
+        </li>
+        
+            <li>
+                <a href="/avance/sprint-3/comprometer-historias-de-usuario#Calendario">Planificacion de lanzamiento</a>
+            </li>
+            <li>
+                <p id="hu_xp">Historias de usuario XP</p>
+                <HuXp/>
+            </li>
+        
+        
+        </li>
+    </ol>
+    </div>
+    <div class="seccion">
+    <hr>
+    <h2>Herramientas</h2>
+    <hr>
+    <h3>Metaforas</h3>
+    <div >
+        <section>
+            <h4>Gestión de usuarios</h4>
+            <p>
+                La <strong>gestión de usuarios</strong> representa a los empleados del restaurante, cada uno con roles específicos. 
+                Al igual que un equipo de trabajo en un restaurante, los usuarios del sistema tienen funciones y responsabilidades determinadas. 
+                Por ejemplo, los <strong>meseros</strong>, <strong>cocineros</strong> y <strong>cajeros</strong> tienen permisos distintos según su rol. 
+                Esto permite asignar tareas y acceder a funcionalidades específicas dentro del sistema según la función de cada usuario en el restaurante.
+            </p>
+        </section>
+    
+        <section>
+            <h4>Notificaciones de pedidos</h4>
+            <p>
+                Las <strong>notificaciones de pedidos</strong> actúan como un sistema de comunicación interna, similar a los meseros 
+                entregando órdenes en papel a la cocina. De manera digital, las notificaciones permiten que las diferentes áreas del restaurante, 
+                como la caja y la cocina, se mantengan sincronizadas. Esto asegura que las órdenes sean procesadas y entregadas de manera eficiente 
+                y sin confusión entre los equipos.
+            </p>
+        </section>
+    
+        <section>
+            <h4>Agregar comentarios en los pedidos</h4>
+            <p>
+                La funcionalidad de <strong>agregar comentarios en los pedidos</strong> es similar a escribir notas o instrucciones adicionales 
+                en una orden física. Como en el caso de "sin cebolla", "agregar salsa extra" o "prioridad alta", los comentarios permiten 
+                la interacción directa entre el cliente y el personal de cocina. Esto asegura que las instrucciones específicas para cada pedido 
+                sean claras y seguidas con precisión durante la preparación de los alimentos.
+            </p>
+        </section>
+    </div>
+    </div>
+<div class="seccion">
+    <hr>
+    <h2>Salidas</h2>
+    <div id="historias-de-usuario">
+    <h3>Modelado de base de datos</h3>
+    <h4>Modelo Fisico</h4>
+    <img width={800} height={800} src="/images/sprint3-base-de-datos.jpeg" alt="falta">
+    </div>
+    <h3>Prototipos</h3>
+    <h4>Gestion de usuarios</h4>
+    <img width={800} height={800} src="/images/sprint3-prototipo_crud.jpg" alt="falta"><br>
+    <h4>Notas</h4>
+    <img width={800} height={800} src="/images/sprint3-prototipo_notas.jpg" alt="falta"><br>
+</div>
+</main>
+    <Footer />
+</body>

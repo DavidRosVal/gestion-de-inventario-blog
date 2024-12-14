@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias de Usuario y Tareas</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>TÍTULO</th>
+                <th>HISTORIA DE USUARIO</th>
+                <th>ID</th>
+                <th>TAREAS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Ajustes en los pedidos</td>
+                <td rowspan="4">Como cajero, quiero tener una sección de extras para agregar elementos adicionales al pedido.</td>
+                <td>T01</td>
+                <td>Crear un diseño visual que incluya un cuadro de texto.</td>
+            </tr>
+            <tr>
+                <td>T02</td>
+                <td>Asegurarse de que la base de datos pueda almacenar la información de los extras.</td>
+            </tr>
+            <tr>
+                <td>T03</td>
+                <td>Integrar el cuadro de texto con el diseño de la interfaz.</td>
+            </tr>
+            <tr>
+                <td>T04</td>
+                <td>Realizar pruebas para verificar que el cajero pueda ingresar y guardar los extras.</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Seguimiento de pedidos</td>
+                <td rowspan="3">Como cajero, quiero recibir notificaciones para conocer el estado de los pedidos.</td>
+                <td>T05</td>
+                <td>Crear un diseño para las notificaciones de fácil comprensión.</td>
+            </tr>
+            <tr>
+                <td>T06</td>
+                <td>Integrar el sistema de notificaciones con los cambios de estado de los pedidos.</td>
+            </tr>
+            <tr>
+                <td>T07</td>
+                <td>Asegurarse de que cualquier cambio de estado en el pedido active automáticamente la notificación correspondiente.</td>
+            </tr>
+
+            <tr>
+                <td rowspan="5">Registro de usuarios</td>
+                <td rowspan="5">Como administrador, quiero registrar nuevos usuarios en el sistema para que puedan acceder a sus funciones.</td>
+                <td>T08</td>
+                <td>Diseñar un formulario de registro que permita ingresar los datos necesarios para el usuario.</td>
+            </tr>
+            <tr>
+                <td>T09</td>
+                <td>Implementar validaciones para que los campos estén completos.</td>
+            </tr>
+            <tr>
+                <td>T10</td>
+                <td>Programar el backend para registrar al usuario en la base de datos.</td>
+            </tr>
+            <tr>
+                <td>T11</td>
+                <td>Realizar pruebas para asegurarse de que el formulario funcione correctamente.</td>
+            </tr>
+            <tr>
+                <td>T12</td>
+                <td>Incorporar mensajes de error para cuando no se completen los campos del formulario.</td>
+            </tr>
+
+            <tr>
+                <td rowspan="6">Consulta de usuarios</td>
+                <td rowspan="6">Como administrador, quiero ver la lista de usuarios registrados para gestionar su información.</td>
+                <td>T13</td>
+                <td>Diseñar una sección que muestre una tabla con los datos de los usuarios registrados.</td>
+            </tr>
+            <tr>
+                <td>T14</td>
+                <td>Incluir opciones de búsqueda y filtrado por criterios.</td>
+            </tr>
+            <tr>
+                <td>T15</td>
+                <td>Programar la funcionalidad backend para obtener la lista de usuarios almacenados en la base de datos.</td>
+            </tr>
+            <tr>
+                <td>T16</td>
+                <td>Implementar paginación para mostrar la lista de usuarios en partes.</td>
+            </tr>
+            <tr>
+                <td>T17</td>
+                <td>Probar las funcionalidades de búsqueda, filtrado y paginación para asegurar su correcto funcionamiento.</td>
+            </tr>
+            <tr>
+                <td>T18</td>
+                <td>Mostrar mensajes claros cuando no haya usuarios registrados.</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Reajuste de usuarios</td>
+                <td rowspan="3">Como administrador, quiero editar los datos de los usuarios para mantener la información actualizada.</td>
+                <td>T19</td>
+                <td>Diseñar un formulario para modificar los datos de los usuarios.</td>
+            </tr>
+            <tr>
+                <td>T20</td>
+                <td>Implementar una función que reciba los cambios realizados en el formulario y actualice los datos del usuario en la base de datos.</td>
+            </tr>
+            <tr>
+                <td>T21</td>
+                <td>Realizar pruebas para asegurarse de que los cambios se guarden correctamente y se reflejen en la lista de usuarios.</td>
+            </tr>
+
+            <tr>
+                <td rowspan="5">Borrado de usuarios</td>
+                <td rowspan="5">Como administrador, quiero eliminar usuarios que ya no necesiten acceso para mantener el sistema organizado.</td>
+                <td>T22</td>
+                <td>Diseñar un botón junto a cada usuario en la lista que permita iniciar el proceso de eliminación.</td>
+            </tr>
+            <tr>
+                <td>T23</td>
+                <td>Mostrar un mensaje de confirmación al administrador para evitar eliminaciones accidentales.</td>
+            </tr>
+            <tr>
+                <td>T24</td>
+                <td>Crear una función que elimine el registro del usuario seleccionado de la base de datos.</td>
+            </tr>
+            <tr>
+                <td>T25</td>
+                <td>Notificar al administrador si la eliminación fue exitosa o si ocurrió algún error durante el proceso.</td>
+            </tr>
+            <tr>
+                <td>T26</td>
+                <td>Realizar pruebas para garantizar que los usuarios se eliminen correctamente.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

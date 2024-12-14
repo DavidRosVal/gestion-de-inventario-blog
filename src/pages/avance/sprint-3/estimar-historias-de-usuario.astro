@@ -1,0 +1,120 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+import TablaEstimacionDeHistorias from '../../../components/sprint3/EstimacionHistoriasDeUsuario.astro';
+import BucketSystem from '../../../components/BucketSystem.astro';
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+      .stakeholders p,strong {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Estimar historias de Usuario</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+          <li>
+            <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>
+          </li>
+          <li>
+            <a href="/avance/sprint-3/crear-historias-de-usuario#historias-de-usuario">Historias de usuario</a>
+          </li>
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Métodos de Estimacion</h3>
+        <h4>Planning Poker</h4>
+        <p>
+            <strong>Planning Poker</strong> es una técnica de estimación utilizada en <em>Scrum</em> para determinar el esfuerzo requerido en las tareas. 
+            Cada miembro del equipo utiliza cartas numeradas para asignar valores de estimación, fomentando la discusión y el consenso 
+            en un ambiente colaborativo.
+        </p>
+        <p><strong>¿Cómo funciona?</strong></p>
+        <ul>
+            <li>El facilitador presenta una tarea o historia de usuario al equipo.</li>
+            <li>Cada miembro del equipo selecciona en secreto una carta con su estimación del esfuerzo necesario.</li>
+            <li>Todos revelan sus cartas al mismo tiempo.</li>
+            <li>Si las estimaciones varían significativamente, se discuten las razones y se vuelve a votar hasta llegar a un consenso.</li>
+        </ul>
+        <h3>Reunion de planificacion del Sprint</h3><br>
+        <img width={800} height={800} src="/images/sprint3-estimarhu.jpeg" alt="">
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="historias-de-usuario-estimadas">
+          <TablaEstimacionDeHistorias/>
+        </div>
+      </div>
+		</main>
+		<Footer />
+	</body>
+</html>

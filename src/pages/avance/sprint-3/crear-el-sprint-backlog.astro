@@ -1,0 +1,120 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+import SprintBacklog from '../../../components/sprint3/SprintBacklog.astro';
+import SprintBurnDownChart from '../../../components/sprint3/SprintBurnDownChart.astro';
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+      .stakeholders p,strong {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Crear el sprint backlog</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+          <li>
+            <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>
+          </li>
+          <li>
+            <a href="/avance/sprint-3/estimar-tareas#effort">EffortEstimatedTaskList</a>
+          </li>
+          <li>
+            <a href="/avance/sprint-3/comprometer-historias-de-usuario#Calendario">Duracion del Sprint</a>
+          </li>
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Reuniones de planificacion del Sprint</h3>
+        <img width={800} height={800} src="/images/sprint3-sprint_backlog.jpeg" alt="">
+
+        <br>
+        
+        
+        </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="sprint-backlog">
+            <h4>Sprint Backlog</h4>
+          <SprintBacklog/>
+        </div>
+        <div id="sprint-burndownchart">
+            <h4>Sprint Burndown Chart</h4>
+          <SprintBurnDownChart/>
+        </div>
+        <br>
+        <div class="image-team-member">
+            <img width={500}  src="/images/grafico_burndown_chart.jpeg" alt="" />
+          </div>
+		</main>
+		<Footer />
+	</body>
+</html>

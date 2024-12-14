@@ -1,0 +1,118 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+import Bc_actualizado from '../../../components/sprint2/BurnDownChartActualizado.astro';
+import Entregables from '../../../components/sprint2/EntregablesDelSprint.astro';
+import Il_final from '../../../components/sprint2/InpedimentLogFinal.astro';
+
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+      .stakeholders p,strong {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Demostrar y validar el Sprint</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+          <li>
+            <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>
+          </li>
+          <li>
+            <p >Entregables del Sprint</p>
+            <Entregables/>
+          </li><br>
+          <li>
+            <a href="/avance/sprint-3/crear-el-sprint-backlog#sprint-backlog">Sprint Backlog</a>
+          </li>
+          <li>
+            <a href="/avance/sprint-3/crear-historias-de-usuario#criterios-terminado">Criterios de terminado</a>
+          </li>
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Reuniones de revision de Sprint</h3>
+        <img width={800} height={800} src="/images/sprint3-entregables.jpeg" alt="">
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="entregables-aceptados">
+            <h4>Entregables aceptados</h4>
+            <iframe src="/sprint3-conformidad.pdf" width="100%" height="600px" style="border: none;">Aceptacion</iframe>
+
+          </div>
+          <br>
+      </div>
+		</main>
+		<Footer />
+	</body>
+</html>

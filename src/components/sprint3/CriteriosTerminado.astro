@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historias de Usuario</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h4>Historias de Usuario</h4>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Historia de Usuario</th>
+            <th>Criterio de Aceptación</th>
+            <th>Prioridad</th>
+        </tr>
+        <tr>
+            <td>HU14</td>
+            <td>Ajustes en los pedidos</td>
+            <td>El campo de texto debe integrarse dentro de la interfaz de pedidos, y cada extra debe registrarse correctamente en la base de datos, asociado al pedido.</td>
+            <td>Should have</td>
+        </tr>
+        <tr>
+            <td>HU15</td>
+            <td>Seguimiento de pedidos</td>
+            <td>Las notificaciones deben generarse al cambiar el estado del pedido. Además, deben poder cerrarse y mostrarse en una ubicación adecuada para no interrumpir el trabajo del cajero.</td>
+            <td>Must have</td>
+        </tr>
+        <tr>
+            <td>HU16</td>
+            <td>Registro de usuarios</td>
+            <td>El formulario de registro debe ser validado antes de su envío, y una vez completado el registro, los nuevos usuarios deben ser añadidos a la base de datos.</td>
+            <td>Must have</td>
+        </tr>
+        <tr>
+            <td>HU17</td>
+            <td>Consulta de usuarios</td>
+            <td>La lista de usuarios debe cargarse desde la base de datos, con opciones de búsqueda y paginación. Asimismo, cada usuario debe tener opciones para ser editado o eliminado.</td>
+            <td>Should have</td>
+        </tr>
+        <tr>
+            <td>HU18</td>
+            <td>Reajuste de usuarios</td>
+            <td>Los datos del usuario deben poder modificarse con validaciones antes de guardar los cambios. Después de la actualización, los nuevos datos deben reflejarse en la lista de usuarios.</td>
+            <td>Must have</td>
+        </tr>
+        <tr>
+            <td>HU19</td>
+            <td>Borrado de usuarios</td>
+            <td>La eliminación de usuarios debe requerir una confirmación para evitar errores, y los usuarios eliminados deben borrarse de la base de datos, con un mensaje de éxito al completar el proceso.</td>
+            <td>Could have</td>
+        </tr>
+    </table>
+</body>
+</html>

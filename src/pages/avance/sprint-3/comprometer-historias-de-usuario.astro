@@ -1,0 +1,124 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts';
+import HUComprometidas from '../../../components/sprint3/HUComprometidas.astro';
+import CriteriosTerminado from '../../../components/sprint3/CriteriosTerminado.astro';
+import Calendario from '../../../components/sprint3/Calendario.astro';
+
+const modeloCanvasUrl = "/modelo-canvas.pdf"
+const actaDeConstitucionUrl = "/acta-de-constitucion.pdf"
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.seccion {
+        margin-bottom: 3em;
+      }
+      h2 {
+        color: var(--accent);
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+      }
+      h3 {
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1em;
+      }
+      .personal-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+      }
+      .personal {
+        width: 500px;
+        text-align: center;
+        padding: 0 1em 0 1em;
+      }
+      .image-team-member {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+      }
+      .stakeholders-container {
+        display: flex;
+        gap: 2em;
+        justify-content: center;
+      }
+      .stakeholders {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 5px;
+      }
+        p {
+        margin: 0;
+        padding: 0;
+      }
+      
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+      <h1>Comprometer historias de usuario</h1>
+      <div class="seccion">
+        <hr>
+        <h2>Entradas</h2>
+        <hr>
+        <ol>
+          <li>
+            <a href="/avance/formar-al-equipo-scrum#scrum-team">Equipo Scrum</a>
+          </li>
+          <li>
+            <a href="/avance/sprint-3/estimar-historias-de-usuario#historias-de-usuario-estimadas">Historias de Usuario Estimadas</a>
+          </li>
+          <li>
+            <p id="calendario">
+                <p>Calendario</p>
+                <Calendario/>
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Herramientas</h2>
+        <hr>
+        <h3>Reuniones de planificacion del Sprint</h3>
+        <div class="image-team-member">
+          <video width={1020} controls>
+              <source src="/videos/sprint3-comprometer_hu.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de videos.
+            </video>
+      </div>
+        <br>
+
+        <!-- <Moscow /> -->
+      </div>
+      <div class="seccion">
+        <hr>
+        <h2>Salidas</h2>
+        <hr>
+        <div id="comprometidas">
+          <h3>Tabla de historias de usuarios comprometidas</h3>
+          
+          <br>
+          <HUComprometidas/>
+        </div>
+      </div>
+		</main>
+		<Footer />
+	</body>
+</html>
